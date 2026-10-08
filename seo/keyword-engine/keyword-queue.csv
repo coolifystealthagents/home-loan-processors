@@ -1,0 +1,6 @@
+keyword,slug,cluster,intent,priority,source
+"loan processor vs home loan va",loan-processor-vs-home-loan-va,"Role design",commercial,1,niche-planning
+"build a home loan document index",home-loan-document-index,"Loan file systems",informational,2,niche-planning
+"a borrower follow up workflow",borrower-follow-up-workflow,"Borrower communication",informational,3,niche-planning
+"design a loan condition tracking routine",loan-condition-tracking,"Pipeline operations",informational,4,niche-planning
+"create a closing preparation checklist",closing-preparation-checklist,"Loan file systems",informational,5,niche-planning

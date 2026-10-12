@@ -1,7 +1,10 @@
 import { site } from './site';
 import type { BlogPost, ResearchPost } from './types';
+import { oct12BlogBatch } from './oct12BlogBatch';
+import { oct12ResearchBatch } from './oct12ResearchBatch';
 
 export const blogPosts: BlogPost[] = [
+  ...oct12BlogBatch,
   {
     "slug": "loan-processor-vs-home-loan-va",
     "title": "Loan processor vs home loan VA",
@@ -469,6 +472,7 @@ export const blogPosts: BlogPost[] = [
   }
 ];
 export const researchPosts: ResearchPost[] = [
+  ...oct12ResearchBatch,
   {
     "slug": "borrower-document-support-workflow-boundary-review-1",
     "title": "Borrower document support: workflow boundary review",

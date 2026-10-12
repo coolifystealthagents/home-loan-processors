@@ -1,0 +1,117 @@
+{
+  "domain": "HomeLoanProcessors.com",
+  "repository": "coolifystealthagents/home-loan-processors",
+  "branch": "main",
+  "publicationDate": "2026-10-12",
+  "blog": [
+    {
+      "slug": "borrower-name-suffix-mismatch-review",
+      "title": "Review Borrower Name and Suffix Mismatches",
+      "sourcePath": "lib/oct12BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/borrower-name-suffix-mismatch-review.svg"
+    },
+    {
+      "slug": "income-document-pay-period-alignment",
+      "title": "Align Income Documents by Pay Period",
+      "sourcePath": "lib/oct12BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/income-document-pay-period-alignment.svg"
+    },
+    {
+      "slug": "asset-statement-page-completeness-check",
+      "title": "Check Asset Statement Page Completeness",
+      "sourcePath": "lib/oct12BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/asset-statement-page-completeness-check.svg"
+    },
+    {
+      "slug": "gift-fund-evidence-routing-map",
+      "title": "Map Gift Fund Evidence Routing",
+      "sourcePath": "lib/oct12BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/gift-fund-evidence-routing-map.svg"
+    },
+    {
+      "slug": "appraisal-reconsideration-intake-boundary",
+      "title": "Set an Appraisal Reconsideration Intake Boundary",
+      "sourcePath": "lib/oct12BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/appraisal-reconsideration-intake-boundary.svg"
+    },
+    {
+      "slug": "insurance-binder-effective-date-check",
+      "title": "Check Insurance Binder Effective Dates",
+      "sourcePath": "lib/oct12BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/insurance-binder-effective-date-check.svg"
+    },
+    {
+      "slug": "title-vesting-instruction-version-log",
+      "title": "Maintain a Title Vesting Instruction Version Log",
+      "sourcePath": "lib/oct12BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/title-vesting-instruction-version-log.svg"
+    },
+    {
+      "slug": "rate-lock-expiration-milestone-board",
+      "title": "Build a Rate Lock Expiration Milestone Board",
+      "sourcePath": "lib/oct12BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/rate-lock-expiration-milestone-board.svg"
+    },
+    {
+      "slug": "condo-questionnaire-exception-routing",
+      "title": "Route Condo Questionnaire Exceptions",
+      "sourcePath": "lib/oct12BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/condo-questionnaire-exception-routing.svg"
+    },
+    {
+      "slug": "flood-determination-receipt-reconciliation",
+      "title": "Reconcile Flood Determination Receipts",
+      "sourcePath": "lib/oct12BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/flood-determination-receipt-reconciliation.svg"
+    },
+    {
+      "slug": "closing-disclosure-receipt-timing-record",
+      "title": "Record Closing Disclosure Receipt Timing",
+      "sourcePath": "lib/oct12BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/closing-disclosure-receipt-timing-record.svg"
+    },
+    {
+      "slug": "post-closing-trailing-document-custody",
+      "title": "Track Custody of Post-Closing Trailing Documents",
+      "sourcePath": "lib/oct12BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/post-closing-trailing-document-custody.svg"
+    }
+  ],
+  "research": [
+    {
+      "slug": "condition-aging-survivorship-bias-study",
+      "title": "Condition Aging Survivorship Bias Study",
+      "sourcePath": "lib/oct12ResearchBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/condition-aging-survivorship-bias-study.svg",
+      "sourceCount": 10
+    },
+    {
+      "slug": "document-request-iteration-burden-study",
+      "title": "Document Request Iteration Burden Study",
+      "sourcePath": "lib/oct12ResearchBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/document-request-iteration-burden-study.svg",
+      "sourceCount": 10
+    },
+    {
+      "slug": "loan-milestone-timestamp-disagreement-study",
+      "title": "Loan Milestone Timestamp Disagreement Study",
+      "sourcePath": "lib/oct12ResearchBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/loan-milestone-timestamp-disagreement-study.svg",
+      "sourceCount": 10
+    },
+    {
+      "slug": "duplicate-borrower-outreach-study",
+      "title": "Duplicate Borrower Outreach Study",
+      "sourcePath": "lib/oct12ResearchBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/duplicate-borrower-outreach-study.svg",
+      "sourceCount": 10
+    },
+    {
+      "slug": "pipeline-status-reviewer-agreement-study",
+      "title": "Pipeline Status Reviewer Agreement Study",
+      "sourcePath": "lib/oct12ResearchBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/pipeline-status-reviewer-agreement-study.svg",
+      "sourceCount": 10
+    }
+  ]
+}

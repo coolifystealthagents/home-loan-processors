@@ -1,0 +1,186 @@
+{
+  "site": "HomeLoanProcessors.com",
+  "canonicalDomain": "https://homeloanprocessors.com",
+  "repository": "coolifystealthagents/home-loan-processors",
+  "branch": "main",
+  "baseSha": "15df7ba1820f3a2b0f8ada3e650aa8c7038999f9",
+  "date": "2026-10-13",
+  "counts": {
+    "blog": 12,
+    "research": 5,
+    "total": 17,
+    "thumbnails": 17
+  },
+  "items": [
+    {
+      "kind": "blog",
+      "slug": "undisclosed-debt-inquiry-explanation-review",
+      "title": "Verify Undisclosed Debt Inquiry Explanations Before Review",
+      "sourcePath": "lib/oct13BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/undisclosed-debt-inquiry-explanation-review.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3293,
+      "sha256": "04806ab75646a8d1e6fd71dd9d731d93c7413e8316a2ef70853d9751c2ffb307"
+    },
+    {
+      "kind": "blog",
+      "slug": "employment-verification-expiration-window",
+      "title": "Reconcile Employment Verification Expiration Windows",
+      "sourcePath": "lib/oct13BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/employment-verification-expiration-window.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3233,
+      "sha256": "e9aba34c3d070b91cadca3ca839a94e2a33ae37593908ad3df1add067dd0dc40"
+    },
+    {
+      "kind": "blog",
+      "slug": "mortgage-insurance-cancellation-evidence-packet",
+      "title": "Build a Mortgage Insurance Cancellation Evidence Packet",
+      "sourcePath": "lib/oct13BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/mortgage-insurance-cancellation-evidence-packet.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3341,
+      "sha256": "4fc69d121dce2eda339c65df7ef35b109ad632aa5e7caf1f52db82a89a387353"
+    },
+    {
+      "kind": "blog",
+      "slug": "changed-circumstance-fee-revision-trace",
+      "title": "Trace Changed Circumstance Fee Revision Evidence",
+      "sourcePath": "lib/oct13BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/changed-circumstance-fee-revision-trace.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3293,
+      "sha256": "2f3d3097a55f15caa6b7d497ebe7209ca8312911b3ee0b6a77644135fd9f3da7"
+    },
+    {
+      "kind": "blog",
+      "slug": "servicing-transfer-notice-preparation-handoff",
+      "title": "Audit a Servicing Transfer Notice Preparation Handoff",
+      "sourcePath": "lib/oct13BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/servicing-transfer-notice-preparation-handoff.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3329,
+      "sha256": "9157ee3a44df8978434072c6db011ea9ac68058bf33d88e4edecd9afb5cf4eba"
+    },
+    {
+      "kind": "blog",
+      "slug": "power-of-attorney-intake-completeness",
+      "title": "Review Power of Attorney Intake Completeness",
+      "sourcePath": "lib/oct13BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/power-of-attorney-intake-completeness.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3269,
+      "sha256": "c773329e33f8c591689d0e1e28536c735d45dc10e418ded2ea5e6123ae8d5a7e"
+    },
+    {
+      "kind": "blog",
+      "slug": "tax-transcript-request-milestone-reconciliation",
+      "title": "Compare Tax Transcript Request Status With File Milestones",
+      "sourcePath": "lib/oct13BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/tax-transcript-request-milestone-reconciliation.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3377,
+      "sha256": "0cf160fd9b7e29930a491336aa0e5065ef57e1a189e5394f209e5f4b86173ce7"
+    },
+    {
+      "kind": "blog",
+      "slug": "escrow-waiver-decision-input-record",
+      "title": "Record Escrow Waiver Inputs Without Recommending Approval",
+      "sourcePath": "lib/oct13BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/escrow-waiver-decision-input-record.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3329,
+      "sha256": "02604c9b41dc28c088281ca011592da0dd9023c6868275461a587729d2b9849d"
+    },
+    {
+      "kind": "blog",
+      "slug": "non-occupant-coborrower-document-routing",
+      "title": "Validate Non-Occupant Co-Borrower Document Routing",
+      "sourcePath": "lib/oct13BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/non-occupant-coborrower-document-routing.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3245,
+      "sha256": "2f3920be6c754dd91ffca2139a14143f84c65c91d2caf6f5e82c22d56a4d47de"
+    },
+    {
+      "kind": "blog",
+      "slug": "disaster-reinspection-exception-queue",
+      "title": "Prepare a Disaster Reinspection Exception Queue",
+      "sourcePath": "lib/oct13BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/disaster-reinspection-exception-queue.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3305,
+      "sha256": "b356cba52760498a2b22f4b86784c804b083286130ad94f6c9f061526ba29a5f"
+    },
+    {
+      "kind": "blog",
+      "slug": "esign-consent-disclosure-delivery-evidence",
+      "title": "Reconcile E-Sign Consent Evidence Before Disclosure Delivery",
+      "sourcePath": "lib/oct13BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/esign-consent-disclosure-delivery-evidence.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3329,
+      "sha256": "d28282819f2e786e18edf8990dd34c385648c56ac3ce3d815ac95bf56650c678"
+    },
+    {
+      "kind": "blog",
+      "slug": "withdrawn-application-retention-checklist",
+      "title": "Close a Withdrawn Application File With a Retention Checklist",
+      "sourcePath": "lib/oct13BlogBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/withdrawn-application-retention-checklist.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3401,
+      "sha256": "68af00d5f9c2cf280d234dddbf2caf5e00ab6ef17c54544c83e1e40c0521c214"
+    },
+    {
+      "kind": "research",
+      "slug": "fee-revision-reason-code-reliability-study",
+      "title": "Fee Revision Reason Code Reliability Study",
+      "sourcePath": "lib/oct13ResearchBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/fee-revision-reason-code-reliability-study.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3534,
+      "sha256": "b130f220b1487807ac1e77acf8e2287ebb4fa54a9258dd876c84d07b0df86b4b"
+    },
+    {
+      "kind": "research",
+      "slug": "borrower-contact-consent-evidence-completeness-study",
+      "title": "Borrower Contact Consent Evidence Completeness Study",
+      "sourcePath": "lib/oct13ResearchBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/borrower-contact-consent-evidence-completeness-study.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3573,
+      "sha256": "7bbf2245568c489e4a45dcec37718b2ce9adf51108aeb277ab0b6c6832af54d7"
+    },
+    {
+      "kind": "research",
+      "slug": "verification-expiration-queue-measurement-study",
+      "title": "Verification Expiration Queue Measurement Study",
+      "sourcePath": "lib/oct13ResearchBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/verification-expiration-queue-measurement-study.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3559,
+      "sha256": "a64d71c9e621d66c8d7c89aff6430a370b1ba3952816a0625079ecf1678bb41e"
+    },
+    {
+      "kind": "research",
+      "slug": "pipeline-fallout-denominator-sensitivity-study",
+      "title": "Pipeline Fallout Denominator Sensitivity Study",
+      "sourcePath": "lib/oct13ResearchBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/pipeline-fallout-denominator-sensitivity-study.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3494,
+      "sha256": "10123e06e9e86d73d30a74ef0c82448a12af3fcd3ab07357e1e69baaed0dda20"
+    },
+    {
+      "kind": "research",
+      "slug": "loan-file-access-recertification-agreement-study",
+      "title": "Loan File Access Recertification Agreement Study",
+      "sourcePath": "lib/oct13ResearchBatch.ts",
+      "thumbnailPath": "public/article-thumbnails/loan-file-access-recertification-agreement-study.svg",
+      "publicationDate": "2026-10-13",
+      "wordCount": 3547,
+      "sha256": "e796c75902db8a1225bab307b681d72fcd7c40a55c4533965931c1351ff416a7"
+    }
+  ]
+}

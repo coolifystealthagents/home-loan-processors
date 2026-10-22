@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { MAX_REQUEST_BYTES, parseLeadForm, readLimitedBody } from '../lib/lead-contract.ts';
+import { MAX_REQUEST_BYTES, parseLeadForm, readLimitedBody, trustedFormOrigin } from '../lib/lead-contract.ts';
 import { deliverLead, formatMattermostLead } from '../lib/lead-delivery.ts';
 import { createRateLimiter, trustedClientKey } from '../lib/rate-limit.ts';
 
@@ -39,6 +39,18 @@ test('field-length bounds reject oversized public input', () => {
 test('limited body reader rejects a stream beyond the request ceiling', async () => {
   const request = new Request('https://example.test/api/submit-lead', { method: 'POST', body: new Uint8Array(MAX_REQUEST_BYTES + 1) });
   await assert.rejects(() => readLimitedBody(request), /too large/i);
+});
+
+test('lead endpoint origin guard is fail-closed in production and narrowly supports local development', () => {
+  const request = (url, origin) => new Request(url, { headers: origin ? { origin } : {} });
+  assert.equal(trustedFormOrigin(request('https://homeloanprocessors.com/api/submit-lead'), 'production'), false);
+  assert.equal(trustedFormOrigin(request('https://homeloanprocessors.com/api/submit-lead', 'https://homeloanprocessors.com'), 'production'), true);
+  assert.equal(trustedFormOrigin(request('https://homeloanprocessors.com/api/submit-lead', 'https://www.homeloanprocessors.com'), 'production'), true);
+  assert.equal(trustedFormOrigin(request('https://homeloanprocessors.com/api/submit-lead', 'https://attacker.invalid'), 'production'), false);
+  assert.equal(trustedFormOrigin(request('https://homeloanprocessors.com/api/submit-lead', 'not a URL'), 'production'), false);
+  assert.equal(trustedFormOrigin(request('http://localhost:3000/api/submit-lead', 'http://localhost:3000'), 'development'), true);
+  assert.equal(trustedFormOrigin(request('https://preview.invalid/api/submit-lead', 'https://preview.invalid'), 'test'), false);
+  assert.equal(trustedFormOrigin(request('https://preview.invalid/api/submit-lead', 'https://preview.invalid'), undefined), false);
 });
 
 const lead = { name: 'Avery Broker', email: 'avery@example.com', phone: '+44 020 1234 5678', business: 'Example Mortgage', message: '', companySize: '11 to 50', positions: '1', referral: 'Search engine', pageUrl: 'https://themortgageassistant.com/contact-us' };

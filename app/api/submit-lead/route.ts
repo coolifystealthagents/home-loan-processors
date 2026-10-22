@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { parseLeadForm, readLimitedBody } from '../../../lib/lead-contract';
+import { parseLeadForm, readLimitedBody, trustedFormOrigin } from '../../../lib/lead-contract';
 import { deliverLead } from '../../../lib/lead-delivery';
 import { createRateLimiter, trustedClientKey } from '../../../lib/rate-limit';
 
@@ -8,6 +8,7 @@ const LIMIT = 8;
 const limiter = createRateLimiter({ limit: LIMIT, windowMs: WINDOW_MS, maxKeys: 10_000 });
 
 export async function POST(request: Request) {
+  if (!trustedFormOrigin(request)) return NextResponse.json({ ok: false, message: 'Request origin is not allowed.' }, { status: 403 });
   if (!limiter.allow(trustedClientKey(request.headers))) return NextResponse.json({ ok: false, message: 'Please wait before trying again.' }, { status: 429 });
   const contentType = request.headers.get('content-type') || '';
   if (!contentType.includes('multipart/form-data') && !contentType.includes('application/x-www-form-urlencoded')) return NextResponse.json({ ok: false, message: 'Unsupported request format.' }, { status: 415 });

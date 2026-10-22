@@ -6,10 +6,21 @@ const COMPANY_SIZES = new Set(['1 to 10', '11 to 50', '51 to 200', '201 to 500',
 const POSITION_COUNTS = new Set(['1', '2 to 3', '4 to 10', '11+', 'Not sure yet', 'Not applicable — privacy request']);
 const REFERRALS = new Set(['Search engine', 'Referral', 'Professional group', 'Social media', 'Stealth Agents', 'Other', 'Privacy request']);
 const COUNTRY_CODES = new Set(['+1', '+44', '+61', '+63', 'other']);
+const TRUSTED_FORM_ORIGINS = new Set(['https://homeloanprocessors.com', 'https://www.homeloanprocessors.com']);
 
 export type LeadPayload = { requestType?: string; name: string; email: string; phone: string; business: string; message: string; companySize: string; positions: string; referral: string; pageUrl: string; userAgent?: string };
 type ParsedLead = { ok: true; lead: LeadPayload; forwardPayload: Record<string, string> };
 type InvalidLead = { ok: false; message: string };
+
+export function trustedFormOrigin(request: Request, environment = process.env.NODE_ENV): boolean {
+  const origin = request.headers.get('origin');
+  if (!origin) return false;
+  try {
+    const normalized = new URL(origin).origin;
+    if (TRUSTED_FORM_ORIGINS.has(normalized)) return true;
+    return environment === 'development' && normalized === new URL(request.url).origin;
+  } catch { return false; }
+}
 
 function text(form: FormData, name: string, limit: number): string | null {
   const entry = form.get(name);

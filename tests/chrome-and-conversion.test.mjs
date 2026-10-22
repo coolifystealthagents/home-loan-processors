@@ -75,6 +75,7 @@ test('personal email is accepted while required fields, tracking, honeypot, and 
   assert.match(form, /data\.set\('_page_url', window\.location\.href\)/);
   assert.match(route, /if \(form\.get\('website_url'\)\)/);
   assert.match(route, /deliverLead/);
+  assert.match(route, /if \(!trustedFormOrigin\(request\)\)/);
   assert.match(contract, /\/\^\\S\+@\\S\+\\\.\\S\+\$\//);
   assert.match(contract, /MAX_REQUEST_BYTES/);
   assert.match(route, /await deliverLead/);

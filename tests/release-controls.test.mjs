@@ -41,6 +41,12 @@ test('visual labels and ordered navigation avoid decorative leading-zero treatme
   assert.match(editorial, /\.toc li::marker/);
 });
 
+test('homepage ledger preserves its complete text-bearing artboard', async () => {
+  const marketing = await read('components/marketing/marketing.css');
+  assert.match(marketing, /\.mortgage-hero-art img\{object-fit:contain\}/);
+  assert.doesNotMatch(marketing, /\.mortgage-hero-art img\{object-fit:cover\}/);
+});
+
 test('site mark is shared by visible chrome and framework favicon', async () => {
   const [visibleLogo, favicon, chrome] = await Promise.all([
     read('public/logo.svg'),

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Mortgage operations ledger</title>
+  <desc id="desc">An editorial illustration of a property file, document checklist, keys, and routed mortgage operations handoffs.</desc>
+  <rect width="1200" height="900" fill="#d8cbb8"/>
+  <path d="M0 72h1200M0 828h1200" stroke="#211a17" stroke-width="2" opacity=".18"/>
+  <rect x="72" y="66" width="684" height="768" fill="#f6f0e5" stroke="#211a17" stroke-width="4"/>
+  <rect x="116" y="112" width="596" height="90" fill="#6f2528"/>
+  <text x="150" y="151" fill="#f6f0e5" font-family="Georgia,serif" font-size="23" letter-spacing="3">ACTIVE PROPERTY FILE</text>
+  <text x="150" y="181" fill="#f6f0e5" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">CONTROLLED WORKING COPY</text>
+  <path d="M116 247h596M116 319h596M116 391h596M116 463h596M116 535h596M116 607h596M116 679h596" stroke="#9a7a3a" stroke-width="2" opacity=".65"/>
+  <g fill="#211a17" font-family="Arial,sans-serif">
+    <text x="158" y="283" font-size="15" letter-spacing="2">DOCUMENT INTAKE</text>
+    <text x="158" y="355" font-size="15" letter-spacing="2">OPEN ITEMS</text>
+    <text x="158" y="427" font-size="15" letter-spacing="2">BORROWER CONTACT</text>
+    <text x="158" y="499" font-size="15" letter-spacing="2">REVIEW HANDOFF</text>
+    <text x="158" y="571" font-size="15" letter-spacing="2">MILESTONE LOG</text>
+    <text x="158" y="643" font-size="15" letter-spacing="2">EXCEPTION OWNER</text>
+  </g>
+  <g fill="none" stroke="#6f2528" stroke-width="4">
+    <rect x="620" y="263" width="20" height="20"/><path d="m624 272 7 7 15-19"/>
+    <rect x="620" y="335" width="20" height="20"/><path d="m624 344 7 7 15-19"/>
+    <rect x="620" y="407" width="20" height="20"/><path d="m624 416 7 7 15-19"/>
+    <rect x="620" y="479" width="20" height="20"/>
+    <rect x="620" y="551" width="20" height="20"/>
+    <rect x="620" y="623" width="20" height="20"/>
+  </g>
+  <text x="154" y="748" fill="#6f2528" font-family="Georgia,serif" font-size="30">Prepare. Record. Escalate.</text>
+  <text x="154" y="780" fill="#211a17" font-family="Arial,sans-serif" font-size="14" letter-spacing="1">DECISIONS REMAIN WITH THE ACCOUNTABLE TEAM</text>
+  <path d="M834 112h290v256H834z" fill="#a17e42" stroke="#211a17" stroke-width="4"/>
+  <path d="M874 307V183l105-61 105 61v124h-75v-77h-60v77z" fill="#f3eee3" stroke="#211a17" stroke-width="5"/>
+  <path d="M802 452h340v306H802z" fill="#efe5d5" stroke="#211a17" stroke-width="4"/>
+  <text x="840" y="504" fill="#6f2528" font-family="Georgia,serif" font-size="27">Handoff register</text>
+  <g stroke="#211a17" stroke-width="2" opacity=".6"><path d="M840 548h260M840 596h260M840 644h260M840 692h260"/></g>
+  <g fill="#211a17" font-family="Arial,sans-serif" font-size="13" letter-spacing="1"><text x="840" y="540">SOURCE</text><text x="840" y="588">OWNER</text><text x="840" y="636">NEXT ACTION</text><text x="840" y="684">REVIEW POINT</text></g>
+  <g transform="translate(938 775) rotate(-18)" fill="none" stroke="#6f2528" stroke-width="13"><circle cx="0" cy="0" r="31"/><path d="M28 16h151m-38 0v34m-42-34v25"/></g>
+</svg>

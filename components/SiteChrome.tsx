@@ -1,22 +1,113 @@
 'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { site } from '@/lib/site';
-import { nav } from '@/lib/content';
-import { LeadForm } from './LeadForm';
+import { usePathname } from 'next/navigation';
+import { useEffect, useRef, useState } from 'react';
 import { ArrowIcon } from './Icons';
+import { site } from '@/lib/site';
+
+const parentLogo = '/brand/stealth-agents-logo-black.png';
+
+function isCurrent(pathname: string, href: string) {
+  return href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`);
+}
 
 export function Header() {
-  return <header className="site-header"><Link className="brand" href="/"><Image src="/logo.svg" alt="" width={42} height={42} /><span>{site.name}</span></Link><nav aria-label="Primary navigation">{nav.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}</nav><Link id="cta-global-header-bookcall" className="button compact" href="/contact-us">Book a free call <ArrowIcon /></Link></header>;
+  const pathname = usePathname();
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const mobileToggleRef = useRef<HTMLButtonElement>(null);
+  const mobileNavRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+
+    const nav = mobileNavRef.current;
+    const focusable = nav?.querySelectorAll<HTMLElement>('a[href], button:not([disabled])');
+    focusable?.[0]?.focus();
+
+    function containMobileFocus(event: KeyboardEvent) {
+      if (event.key === 'Escape') {
+        setMobileOpen(false);
+        mobileToggleRef.current?.focus();
+        return;
+      }
+      if (event.key === 'Tab' && focusable?.length) {
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    }
+
+    document.addEventListener('keydown', containMobileFocus);
+    return () => document.removeEventListener('keydown', containMobileFocus);
+  }, [mobileOpen]);
+
+  return (
+    <>
+      <a className="skip-link" href="#main-content">Skip to main content</a>
+      <div className="utility-strip">
+        <span>Specialist support for mortgage operations</span>
+        <a className="powered-by" href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">
+          <Image src={parentLogo} alt="Stealth Agents" width={104} height={28} />
+          <span>Powered by StealthAgents</span>
+        </a>
+      </div>
+      <header className="site-header">
+        <Link className="brand" href="/" aria-label={`${site.name} home`}>
+          <Image src="/logo.svg" alt="" width={42} height={42} priority />
+          <span>{site.name}</span>
+        </Link>
+        <button
+          ref={mobileToggleRef}
+          className="nav-toggle"
+          type="button"
+          aria-expanded={mobileOpen}
+          aria-controls="primary-navigation"
+          onClick={() => setMobileOpen((open) => !open)}
+        >
+          <span aria-hidden="true" className="nav-toggle-lines"><i /><i /><i /></span>
+          <span>{mobileOpen ? 'Close' : 'Menu'}</span>
+        </button>
+        <nav ref={mobileNavRef} id="primary-navigation" className={mobileOpen ? 'primary-nav is-open' : 'primary-nav'} aria-label="Primary navigation">
+          <Link className={isCurrent(pathname, '/') ? 'is-current' : undefined} aria-current={isCurrent(pathname, '/') ? 'page' : undefined} href="/">Home</Link>
+          <Link className={isCurrent(pathname, '/services') ? 'is-current' : undefined} aria-current={isCurrent(pathname, '/services') ? 'page' : undefined} href="/services">Services</Link>
+          <Link id="cta-global-header-contact" className={`button primary nav-cta${isCurrent(pathname, '/contact-us') ? ' is-current' : ''}`} aria-current={isCurrent(pathname, '/contact-us') ? 'page' : undefined} href="/contact-us">Contact Us <ArrowIcon /></Link>
+        </nav>
+      </header>
+    </>
+  );
 }
+
 export function Footer() {
-  return <footer><div><Link className="brand inverse" href="/"><Image src="/logo.svg" alt="" width={44} height={44} /><span>{site.name}</span></Link><p>Specialist remote staff for {site.audience}.</p></div><div className="footer-links">{nav.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}<Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div><p className="copyright">© {new Date().getFullYear()} {site.name}</p></footer>;
-}
-export function TimedLeadModal() {
-  const [open, setOpen] = useState(false);
-  useEffect(() => { if (sessionStorage.getItem('lead-modal-seen')) return; const timer = window.setTimeout(() => { sessionStorage.setItem('lead-modal-seen', 'true'); setOpen(true); }, 8000); return () => clearTimeout(timer); }, []);
-  useEffect(() => { const key = (event: KeyboardEvent) => event.key === 'Escape' && setOpen(false); window.addEventListener('keydown', key); return () => window.removeEventListener('keydown', key); }, []);
-  if (!open) return null;
-  return <div className="modal-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && setOpen(false)}><section className="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button className="modal-close" onClick={() => setOpen(false)} aria-label="Close form">×</button><p className="eyebrow">A calmer next step</p><h2 id="modal-title">Tell us what is taking too much of your day.</h2><p>We will help you map the right support role in a free consultation.</p><LeadForm source="timed-modal" /></section></div>;
+  return (
+    <footer className="site-footer">
+      <div className="footer-main">
+        <div>
+          <Link className="brand inverse" href="/"><Image src="/logo.svg" alt="" width={44} height={44} /><span>{site.name}</span></Link>
+          <p>Specialist remote staff for {site.audience}.</p>
+          <a className="parent-mark" href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">
+            <Image src={parentLogo} alt="Stealth Agents" width={132} height={36} />
+            <span>Powered by StealthAgents</span>
+          </a>
+        </div>
+        <nav className="footer-links" aria-label="Footer navigation">
+          <div><strong>Explore</strong><Link href="/">Home</Link><Link href="/services">Services</Link><Link href="/contact-us">Contact Us</Link></div>
+          <div><strong>Company</strong><Link href="/about">About</Link><Link href="/blog">Blog</Link><Link href="/research">Research</Link></div>
+          <div><strong>Legal</strong><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div>
+        </nav>
+      </div>
+      <p className="copyright">© {new Date().getFullYear()} {site.name}. Mortgage decisions remain with licensed and authorized professionals.</p>
+    </footer>
+  );
 }

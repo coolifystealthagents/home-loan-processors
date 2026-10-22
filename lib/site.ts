@@ -1,108 +1,130 @@
-import type { SiteConfig } from './types';
+import type { LaunchStep, Service, SiteConfig } from './types';
+
+const launchSteps: LaunchStep[] = [
+  { title: 'Map one queue', detail: 'Identify where work enters, the system of record, the current owner, and the exceptions that consume licensed attention.' },
+  { title: 'Set the boundary', detail: 'Document permitted actions, prohibited decisions, approved language, access limits, and the client reviewer.' },
+  { title: 'Run a controlled sample', detail: 'Begin with a small file set, inspect every output, and record missing inputs or unclear escalation triggers.' },
+  { title: 'Review and expand', detail: 'Use observed quality and exceptions to improve the checklist before adding volume or adjacent work.' },
+];
+
+const sharedBoundaries = [
+  'No credit, underwriting, eligibility, pricing, disclosure, approval, or lending decisions.',
+  'No legal, tax, financial, compliance, or regulatory advice or interpretation.',
+  'No movement of funds, verification of wire changes, or approval of borrower-facing commitments.',
+  'Client personnel retain supervision, permissions, privacy obligations, and every licensed decision.',
+];
+
+const sharedFaq = [
+  { question: 'Who remains accountable for the work?', answer: 'Your authorized mortgage team retains supervision, review, compliance, privacy, and every licensed or regulated decision.' },
+  { question: 'Can the role begin with one workflow?', answer: 'Yes. A narrow queue with a known source, completion standard, reviewer, and escalation path is the safest starting point.' },
+  { question: 'How is quality reviewed?', answer: 'The client reviews a defined sample against visible completion and escalation criteria, then updates the workflow when patterns appear.' },
+];
+
+function service(input: Omit<Service, 'launchSteps' | 'boundaries' | 'faq'> & Partial<Pick<Service, 'launchSteps' | 'boundaries' | 'faq'>>): Service {
+  return {
+    ...input,
+    launchSteps: input.launchSteps ?? launchSteps,
+    boundaries: input.boundaries ?? sharedBoundaries,
+    faq: input.faq ?? sharedFaq,
+  };
+}
+
 export const site: SiteConfig = {
-  "name": "Home Loan Processors",
-  "domain": "homeloanprocessors.com",
-  "siteId": "home-loan-processors",
-  "niche": "home loan teams",
-  "audience": "mortgage brokers, lenders, and home loan operations teams",
-  "design": "blueprint",
-  "eyebrow": "Home loan files, built from a clearer plan",
-  "hero": "Move every loan file",
-  "heroAccent": "from blueprint to review.",
-  "heroBody": "Specialist remote assistants support document requests, file indexing, borrower follow up, milestone records, and closing preparation while licensed professionals retain every credit and approval decision.",
-  "manifesto": "A reliable loan process makes requirements visible before the file reaches the next desk.",
-  "primary": "#087ac1",
-  "secondary": "#7fc9ed",
-  "accent": "#e7463e",
-  "canvas": "#f7fbfd",
-  "ink": "#0b2e46",
-  "displayFont": "Rockwell",
-  "bodyFont": "Trebuchet MS",
-  "heroImage": "/hero.png",
-  "heroAlt": "Blueprint house transforming into a dimensional home and organized blank document trays",
-  "services": [
-    {
-      "slug": "borrower-document-support",
-      "name": "Borrower document support",
-      "short": "Keep approved document requests and response status organized.",
-      "tasks": [
-        "Prepare request checklists",
-        "Send approved reminders",
-        "Index received materials",
-        "Escalate missing items"
-      ]
-    },
-    {
-      "slug": "loan-file-indexing",
-      "name": "Loan file indexing",
-      "short": "Maintain clear document names, locations, and review status.",
-      "tasks": [
-        "Classify approved files",
-        "Maintain document indexes",
-        "Check version status",
-        "Flag conflicting records"
-      ]
-    },
-    {
-      "slug": "pipeline-records",
-      "name": "Pipeline record support",
-      "short": "Keep milestones, ownership, and next actions accurate.",
-      "tasks": [
-        "Update approved fields",
-        "Maintain milestone notes",
-        "Prepare pipeline summaries",
-        "Flag stale records"
-      ]
-    },
-    {
-      "slug": "borrower-follow-up",
-      "name": "Borrower follow up support",
-      "short": "Handle routine approved communication with clear escalation.",
-      "tasks": [
-        "Prepare follow up queues",
-        "Record borrower responses",
-        "Route substantive questions",
-        "Escalate sensitive messages"
-      ]
-    },
-    {
-      "slug": "condition-tracking-support",
-      "name": "Condition tracking support",
-      "short": "Maintain visible records of requested and received conditions.",
-      "tasks": [
-        "Prepare condition lists",
-        "Track document status",
-        "Maintain reviewer notes",
-        "Flag overdue items"
-      ]
-    },
-    {
-      "slug": "closing-preparation",
-      "name": "Closing preparation support",
-      "short": "Organize milestone records and review-ready closing packets.",
-      "tasks": [
-        "Prepare closing checklists",
-        "Maintain date records",
-        "Coordinate approved reminders",
-        "Escalate schedule conflicts"
-      ]
-    }
+  name: 'Home Loan Processors',
+  domain: 'homeloanprocessors.com',
+  siteId: 'home-loan-processors',
+  niche: 'home loan teams',
+  audience: 'mortgage brokers, lenders, and home loan operations teams',
+  design: 'mortgage-operations',
+  eyebrow: 'Home loan files, built from a clearer plan',
+  hero: 'Move every loan file',
+  heroAccent: 'from blueprint to review.',
+  heroBody: 'Specialist remote assistants support document requests, file indexing, borrower follow up, milestone records, and closing preparation while licensed professionals retain every credit and approval decision.',
+  manifesto: 'A reliable loan process makes requirements visible before the file reaches the next desk.',
+  primary: '#6f2528',
+  secondary: '#e4c56d',
+  accent: '#9a7a3a',
+  canvas: '#f3eee3',
+  ink: '#211a17',
+  displayFont: 'Iowan Old Style',
+  bodyFont: 'Arial',
+  heroImage: '/images/mortgage/operations-ledger.svg',
+  heroAlt: 'Illustrated mortgage operations desk showing a property file, document queue, milestone record, and accountable review path',
+  services: [
+    service({
+      slug: 'borrower-document-support', name: 'Borrower document support',
+      short: 'Keep approved document requests, receipt status, and review handoffs organized.',
+      outcome: 'A visible borrower-document queue with source notes, status, next owner, and exceptions ready for authorized review.',
+      idealFor: ['Teams losing time to repeated document-status checks', 'Operations with approved borrower reminder language'],
+      tasks: ['Prepare approved request checklists', 'Send approved reminders through authorized channels', 'Record receipt and version status', 'Index materials in approved systems', 'Escalate missing, conflicting, or sensitive items'],
+      clientInputs: ['Approved document-request matrix', 'Borrower communication templates', 'Authorized systems and access rules', 'Named reviewer and escalation rules'],
+      outputs: ['Current request and receipt register', 'Indexed document set with source notes', 'Exception queue for authorized review', 'Factual borrower follow-up record'],
+      qualityControls: ['Required-field and source check', 'Duplicate and superseded-version check', 'Sample review by the client owner', 'Immediate routing of substantive borrower questions'],
+      relatedRoles: ['loan-file-indexing', 'borrower-follow-up'],
+      relatedContent: [{ title: 'Loan processor vs home loan VA', href: '/blog/loan-processor-vs-home-loan-va' }, { title: 'Build a home loan document index', href: '/blog/home-loan-document-index' }],
+    }),
+    service({
+      slug: 'loan-file-indexing', name: 'Loan file indexing',
+      short: 'Maintain clear document names, locations, versions, and review status.',
+      outcome: 'A review-ready file index that lets the authorized team find the current evidence and see unresolved conflicts.',
+      idealFor: ['Teams with fragmented or inconsistently named file records', 'Queues where reviewers repeatedly reconstruct version history'],
+      tasks: ['Classify approved file types', 'Apply documented naming rules', 'Maintain document indexes', 'Record source and receipt dates', 'Flag duplicate, stale, or conflicting records'],
+      clientInputs: ['File taxonomy and naming standard', 'Approved repositories and permissions', 'Required index fields', 'Retention and escalation rules'],
+      outputs: ['Current loan-file index', 'Version and duplicate exception list', 'Missing-metadata queue', 'Review-ready file map'],
+      qualityControls: ['Index completeness check', 'File-to-register reconciliation', 'Version-currentness review', 'Exception sample reviewed by the client'],
+      relatedRoles: ['borrower-document-support', 'condition-tracking-support'],
+      relatedContent: [{ title: 'Build a home loan document index', href: '/blog/home-loan-document-index' }, { title: 'Borrower follow up workflow', href: '/blog/borrower-follow-up-workflow' }],
+    }),
+    service({
+      slug: 'pipeline-records', name: 'Pipeline record support',
+      short: 'Keep approved milestones, ownership, and next actions accurate.',
+      outcome: 'A readable pipeline record in the designated system, with stale items and decision-dependent exceptions surfaced.',
+      idealFor: ['Teams rebuilding status from inboxes and meetings', 'Pipelines with unclear ownership or stale next actions'],
+      tasks: ['Update approved administrative fields', 'Maintain milestone notes and next-owner records', 'Prepare factual pipeline summaries', 'Reconcile approved source systems', 'Flag stale or conflicting status'],
+      clientInputs: ['Field dictionary and source hierarchy', 'Milestone definitions', 'Ownership rules', 'Update and escalation thresholds'],
+      outputs: ['Current pipeline register', 'Stale-record and mismatch queue', 'Factual milestone summary', 'Next-owner report'],
+      qualityControls: ['Required-field check', 'Source-of-truth reconciliation', 'Timestamp and ownership review', 'Client review of status exceptions'],
+      relatedRoles: ['condition-tracking-support', 'closing-preparation'],
+      relatedContent: [{ title: 'Loan processor vs home loan VA', href: '/blog/loan-processor-vs-home-loan-va' }, { title: 'Borrower follow up workflow', href: '/blog/borrower-follow-up-workflow' }],
+    }),
+    service({
+      slug: 'borrower-follow-up', name: 'Borrower follow up support',
+      short: 'Handle routine approved communication with clear escalation.',
+      outcome: 'Timely, documented routine follow-up while substantive questions return promptly to authorized mortgage professionals.',
+      idealFor: ['Teams with repeatable approved reminders', 'Borrower-facing staff losing time to status chasing'],
+      tasks: ['Prepare follow-up queues', 'Send approved routine reminders', 'Record borrower responses', 'Route substantive questions', 'Escalate complaints, hardship, or sensitive messages'],
+      clientInputs: ['Approved scripts and channels', 'Contact and consent records', 'Timing rules', 'Escalation contacts and prohibited topics'],
+      outputs: ['Current follow-up queue', 'Communication and response log', 'Question-routing record', 'Urgent exception alerts'],
+      qualityControls: ['Consent and channel check', 'Approved-language check', 'Response capture review', 'Immediate escalation of prohibited or sensitive topics'],
+      relatedRoles: ['borrower-document-support', 'pipeline-records'],
+      relatedContent: [{ title: 'Borrower follow up workflow', href: '/blog/borrower-follow-up-workflow' }, { title: 'Build a home loan document index', href: '/blog/home-loan-document-index' }],
+    }),
+    service({
+      slug: 'condition-tracking-support', name: 'Condition tracking support',
+      short: 'Maintain visible records of requested and received conditions.',
+      outcome: 'A current administrative condition register that distinguishes received evidence, missing items, and matters awaiting authorized judgment.',
+      idealFor: ['Teams with high condition volume and repeated status checks', 'Workflows where evidence arrives through several channels'],
+      tasks: ['Prepare condition lists from authorized instructions', 'Track requested and received status', 'Link approved source records', 'Maintain factual reviewer notes', 'Flag overdue or conflicting items'],
+      clientInputs: ['Authorized condition instructions', 'Status definitions', 'Approved evidence locations', 'Reviewer and escalation rules'],
+      outputs: ['Current condition register', 'Missing and overdue queue', 'Evidence-location record', 'Exception list for authorized review'],
+      qualityControls: ['Instruction-to-register reconciliation', 'Evidence-link and date check', 'No satisfaction or underwriting judgment by the assistant', 'Client sample review'],
+      relatedRoles: ['borrower-document-support', 'loan-file-indexing'],
+      relatedContent: [{ title: 'Loan processor vs home loan VA', href: '/blog/loan-processor-vs-home-loan-va' }, { title: 'Build a home loan document index', href: '/blog/home-loan-document-index' }],
+    }),
+    service({
+      slug: 'closing-preparation', name: 'Closing preparation support',
+      short: 'Organize milestone records and review-ready closing packets.',
+      outcome: 'A visible closing-preparation queue with dates, source records, open administrative items, and schedule exceptions ready for review.',
+      idealFor: ['Teams coordinating many administrative closing milestones', 'Queues where schedule changes are reconstructed manually'],
+      tasks: ['Prepare approved closing checklists', 'Maintain date and milestone records', 'Coordinate approved reminders', 'Organize review-ready packet indexes', 'Escalate conflicts or unverified changes'],
+      clientInputs: ['Approved checklist and milestone definitions', 'Authorized source systems', 'Communication templates', 'Schedule and wire-change escalation rules'],
+      outputs: ['Current closing-preparation checklist', 'Milestone and reminder record', 'Packet index', 'Schedule-conflict and unverified-change queue'],
+      qualityControls: ['Date-source reconciliation', 'Checklist completeness review', 'No funds movement or wire-change verification', 'Final review by authorized client personnel'],
+      relatedRoles: ['pipeline-records', 'loan-file-indexing'],
+      relatedContent: [{ title: 'Loan processor vs home loan VA', href: '/blog/loan-processor-vs-home-loan-va' }, { title: 'Borrower follow up workflow', href: '/blog/borrower-follow-up-workflow' }],
+    }),
   ],
-  "categories": [
-    "Loan file systems",
-    "Borrower communication",
-    "Pipeline operations",
-    "Role design"
-  ],
-  "principles": [
-    "Top 1 percent selectivity",
-    "Clear role boundaries",
-    "Reviewable workflows"
-  ],
-  "sources": [
-    {
-      "label": "Consumer Financial Protection Bureau",
-      "url": "https://www.consumerfinance.gov/owning-a-home/"
-    }
-  ]
+  categories: ['Loan file systems', 'Borrower communication', 'Pipeline operations', 'Role design'],
+  principles: ['Selective candidate matching', 'Clear role boundaries', 'Reviewable workflows'],
+  sources: [{ label: 'Consumer Financial Protection Bureau', url: 'https://www.consumerfinance.gov/owning-a-home/' }],
 };

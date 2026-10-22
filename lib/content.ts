@@ -479,11 +479,11 @@ export const researchPosts: ResearchPost[] = [
   ...oct12ResearchBatch,
   {
     "slug": "borrower-document-support-workflow-boundary-review-1",
-    "title": "Borrower document support: workflow boundary review",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve borrower document support workflows.",
+    "title": "Non-empirical: Borrower document support: workflow boundary review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Loan file systems",
     "publishedAt": "2026-10-01",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -501,11 +501,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "loan-file-indexing-source-quality-audit-2",
-    "title": "Loan file indexing: source quality audit",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve loan file indexing workflows.",
+    "title": "Non-empirical: Loan file indexing: source quality review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Borrower communication",
     "publishedAt": "2026-10-02",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -523,11 +523,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "pipeline-records-exception-pattern-study-3",
-    "title": "Pipeline record support: exception pattern study",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve pipeline record support workflows.",
+    "title": "Non-empirical: Pipeline record support: exception pattern review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Pipeline operations",
     "publishedAt": "2026-10-03",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -545,11 +545,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "borrower-follow-up-handoff-reliability-brief-4",
-    "title": "Borrower follow up support: handoff reliability brief",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve borrower follow up support workflows.",
+    "title": "Non-empirical: Borrower follow up support: handoff reliability review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Role design",
     "publishedAt": "2026-10-04",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -567,11 +567,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "condition-tracking-support-review-consistency-report-5",
-    "title": "Condition tracking support: review consistency report",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve condition tracking support workflows.",
+    "title": "Non-empirical: Condition tracking support: review consistency review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Loan file systems",
     "publishedAt": "2026-10-05",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -589,11 +589,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "closing-preparation-workflow-boundary-review-6",
-    "title": "Closing preparation support: workflow boundary review",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve closing preparation support workflows.",
+    "title": "Non-empirical: Closing preparation support: workflow boundary review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Borrower communication",
     "publishedAt": "2026-10-06",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -611,11 +611,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "borrower-document-support-source-quality-audit-7",
-    "title": "Borrower document support: source quality audit",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve borrower document support workflows.",
+    "title": "Non-empirical: Borrower document support: source quality review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Pipeline operations",
     "publishedAt": "2026-10-07",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -633,11 +633,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "loan-file-indexing-exception-pattern-study-8",
-    "title": "Loan file indexing: exception pattern study",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve loan file indexing workflows.",
+    "title": "Non-empirical: Loan file indexing: exception pattern review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Role design",
     "publishedAt": "2026-10-08",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -655,11 +655,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "pipeline-records-handoff-reliability-brief-9",
-    "title": "Pipeline record support: handoff reliability brief",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve pipeline record support workflows.",
+    "title": "Non-empirical: Pipeline record support: handoff reliability review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Loan file systems",
     "publishedAt": "2026-10-01",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -677,11 +677,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "borrower-follow-up-review-consistency-report-10",
-    "title": "Borrower follow up support: review consistency report",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve borrower follow up support workflows.",
+    "title": "Non-empirical: Borrower follow up support: review consistency review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Borrower communication",
     "publishedAt": "2026-10-02",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -699,11 +699,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "condition-tracking-support-workflow-boundary-review-11",
-    "title": "Condition tracking support: workflow boundary review",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve condition tracking support workflows.",
+    "title": "Non-empirical: Condition tracking support: workflow boundary review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Pipeline operations",
     "publishedAt": "2026-10-03",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -721,11 +721,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "closing-preparation-source-quality-audit-12",
-    "title": "Closing preparation support: source quality audit",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve closing preparation support workflows.",
+    "title": "Non-empirical: Closing preparation support: source quality review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Role design",
     "publishedAt": "2026-10-04",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -743,11 +743,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "borrower-document-support-exception-pattern-study-13",
-    "title": "Borrower document support: exception pattern study",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve borrower document support workflows.",
+    "title": "Non-empirical: Borrower document support: exception pattern review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Loan file systems",
     "publishedAt": "2026-10-05",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -765,11 +765,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "loan-file-indexing-handoff-reliability-brief-14",
-    "title": "Loan file indexing: handoff reliability brief",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve loan file indexing workflows.",
+    "title": "Non-empirical: Loan file indexing: handoff reliability review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Borrower communication",
     "publishedAt": "2026-10-06",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -787,11 +787,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "pipeline-records-review-consistency-report-15",
-    "title": "Pipeline record support: review consistency report",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve pipeline record support workflows.",
+    "title": "Non-empirical: Pipeline record support: review consistency review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Pipeline operations",
     "publishedAt": "2026-10-07",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -809,11 +809,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "borrower-follow-up-workflow-boundary-review-16",
-    "title": "Borrower follow up support: workflow boundary review",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve borrower follow up support workflows.",
+    "title": "Non-empirical: Borrower follow up support: workflow boundary review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Role design",
     "publishedAt": "2026-10-08",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -831,11 +831,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "condition-tracking-support-source-quality-audit-17",
-    "title": "Condition tracking support: source quality audit",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve condition tracking support workflows.",
+    "title": "Non-empirical: Condition tracking support: source quality review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Loan file systems",
     "publishedAt": "2026-10-01",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -853,11 +853,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "closing-preparation-exception-pattern-study-18",
-    "title": "Closing preparation support: exception pattern study",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve closing preparation support workflows.",
+    "title": "Non-empirical: Closing preparation support: exception pattern review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Borrower communication",
     "publishedAt": "2026-10-02",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -875,11 +875,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "borrower-document-support-handoff-reliability-brief-19",
-    "title": "Borrower document support: handoff reliability brief",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve borrower document support workflows.",
+    "title": "Non-empirical: Borrower document support: handoff reliability review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Pipeline operations",
     "publishedAt": "2026-10-03",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",
@@ -897,11 +897,11 @@ export const researchPosts: ResearchPost[] = [
   },
   {
     "slug": "loan-file-indexing-review-consistency-report-20",
-    "title": "Loan file indexing: review consistency report",
-    "summary": "A source-led brief on how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve loan file indexing workflows.",
+    "title": "Non-empirical: Loan file indexing: review consistency review",
+    "summary": "A non-empirical operating hypothesis for how mortgage brokers, lenders, and home loan operations teams can define, inspect, and improve this workflow. It is guidance for process design, not measured research.",
     "cluster": "Role design",
     "publishedAt": "2026-10-04",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Non-empirical operating hypothesis: a visible boundary between routine preparation and accountable judgment can support clearer review when paired with source records and explicit escalation.",
     "sources": [
       {
         "label": "Consumer Financial Protection Bureau",

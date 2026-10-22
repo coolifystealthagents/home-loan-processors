@@ -1,15 +1,163 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { ArticleToc } from '@/components/editorial/ArticleToc';
+import { EditorialSidebar } from '@/components/editorial/EditorialSidebar';
+import { headingId } from '@/components/editorial/headingId';
 import { blogPosts, blogBySlug } from '@/lib/content';
 import { site } from '@/lib/site';
+import styles from '../editorial.module.css';
 
-const formatDate=(date:string)=>new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'}).format(new Date(`${date}T00:00:00Z`));
-export function generateStaticParams(){return blogPosts.map(({slug})=>({slug}))}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const post=blogBySlug(slug);return post?{title:post.title,description:post.description,alternates:{canonical:`/blog/${post.slug}`},openGraph:post.thumbnail?{images:[{url:post.thumbnail,alt:post.title}]}:undefined}:{} }
+const origin = `https://${site.domain}`;
 
-export default async function BlogPostPage({params}:{params:Promise<{slug:string}>}){
-  const {slug}=await params,post=blogBySlug(slug);if(!post)notFound();
-  const related=blogPosts.filter((p)=>p.slug!==post.slug).slice(0,3);
-  return <main><header className="page-hero"><p className="eyebrow">Home / Blog / {post.category}</p><h1>{post.title}</h1><p>{post.description}</p><p className="meta">{site.name} Editorial Team · Published {formatDate(post.publishedAt)} · {post.readTime}</p>{post.thumbnail&&<img className="article-thumbnail" src={post.thumbnail} alt={post.title}/>}</header><section className="content-wrap article-layout"><article className="prose"><nav className="toc" aria-label="On this page"><strong>On this page</strong>{post.sections.map((section)=><a key={section.heading} href={`#${section.heading.toLowerCase().replace(/[^a-z0-9]+/g,'-')}`}>{section.heading}</a>)}</nav>{post.sections.map((section,index)=><section key={section.heading} id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g,'-')}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph)=><p key={paragraph}>{paragraph}</p>)}{index===2&&<p>Use the <Link href={post.internalService}>specialist service role</Link> as a starting point for defining scope and evidence.</p>}{index===4&&<p><a href={post.source.url} rel="noopener noreferrer">{post.source.label}</a> provides public guidance that can help your team test the workflow assumptions.</p>}{index===6&&<p>Compare this approach with our guide to <Link href={post.internalSibling}>the next related workflow</Link>.</p>}</section>)}<h2>Common questions answered</h2>{post.faq.map((item)=><div key={item.q}><h3>{item.q}</h3><p>{item.a}</p></div>)}<h2>Ready to create a clearer support role?</h2><p>Bring the workflow that consumes the most attention. We will help you shape the role, handoff, and review points.</p><Link id="cta-blog-final-bookcall" className="button primary" href="/contact-us">Book a free consultation</Link></article><aside className="sidebar"><p className="eyebrow">A practical next step</p><h3>Turn one recurring workflow into a clear role brief.</h3><p>Start with a free working conversation.</p><Link id="cta-blog-sidebar-schedulecall" className="button" href="/contact-us">Schedule a free call</Link></aside></section><section className="section"><div className="section-heading"><p className="eyebrow">Related articles</p><h2>Keep building the system.</h2></div><div className="article-grid">{related.map((item)=><Link className="article-card" href={`/blog/${item.slug}`} key={item.slug}><h3>{item.title}</h3><p>{item.description}</p></Link>)}</div></section></main>
+export function generateStaticParams() {
+  return blogPosts.map(({ slug }) => ({ slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const post = blogBySlug(slug);
+  if (!post) return {};
+  const coverImage = post.thumbnail ?? `/visual/blog-${post.slug}`;
+
+  return {
+    title: post.title,
+    description: post.description,
+    authors: [{ name: `${site.name} Editorial Team` }],
+    alternates: { canonical: `/blog/${post.slug}` },
+    openGraph: {
+      type: 'article',
+      title: post.title,
+      description: post.description,
+      url: `/blog/${post.slug}`,
+      publishedTime: post.publishedAt,
+      images: [{ url: coverImage, alt: `Workflow illustration for “${post.title}”` }],
+    },
+  };
+}
+
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = blogBySlug(slug);
+  if (!post) notFound();
+  const coverImage = post.thumbnail ?? `/visual/blog-${post.slug}`;
+
+  const sameCategory = blogPosts.filter((item) => item.slug !== post.slug && item.category === post.category);
+  const related = (sameCategory.length > 0
+    ? sameCategory
+    : blogPosts.filter((item) => item.slug !== post.slug)
+  ).slice(0, 3);
+  const faqHeading = 'Common questions answered';
+  const ctaHeading = 'Turn the workflow into a clear role brief';
+  const tocItems = [
+    ...post.sections.map((section) => ({ label: section.heading })),
+    ...(post.faq.length ? [{ label: faqHeading }] : []),
+    { label: ctaHeading },
+  ];
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.description,
+    datePublished: post.publishedAt,
+    mainEntityOfPage: `${origin}/blog/${post.slug}`,
+    author: { '@type': 'Organization', name: `${site.name} Editorial Team` },
+    publisher: { '@type': 'Organization', name: site.name },
+    image: `${origin}${coverImage}`,
+  };
+  const faqSchema = post.faq.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: post.faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  } : null;
+
+  return (
+    <main className={styles.page} id="article-top">
+      <div className={styles.progress} aria-hidden="true" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, '\\u003c') }} />}
+
+      <header className={styles.hero}>
+        <div className={styles.heroInner}>
+          <p className={styles.kicker}><Link href="/blog">Field notes</Link> / {post.category}</p>
+          <h1>{post.title}</h1>
+          <p className={styles.deck}>{post.description}</p>
+          <p className={styles.byline}>
+            <span>By {site.name} Editorial Team</span>
+            <span>Published <time dateTime={post.publishedAt}>{post.publishedAt}</time></span>
+            <span>{post.readTime}</span>
+          </p>
+        </div>
+      </header>
+
+      <div className={styles.articleShell}>
+        <ArticleToc items={tocItems} />
+
+        <article className={styles.article}>
+          <Image
+            className={styles.cover}
+            src={coverImage}
+            alt={`Workflow illustration for “${post.title}”`}
+            width={1200}
+            height={630}
+            priority
+            unoptimized
+          />
+          {post.sections.map((section, index) => (
+            <section className={styles.articleSection} key={section.heading} id={headingId(section.heading)}>
+              <h2>{section.heading}</h2>
+              {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              {index === 1 && (
+                <p className={styles.contextNote}>
+                  To translate this boundary into a scoped position, review our <Link className={styles.inlineLink} href={post.internalService}>specialist service responsibilities and workflow examples</Link>.
+                </p>
+              )}
+              {index === Math.min(3, post.sections.length - 1) && (
+                <p className={styles.contextNote}>
+                  Source check: <a className={styles.inlineLink} href={post.source.url} rel="noopener noreferrer">{post.source.label}</a> provides the public guidance used to test the assumptions in this workflow.
+                </p>
+              )}
+              {index === Math.min(5, post.sections.length - 1) && (
+                <p className={styles.contextNote}>
+                  Continue with <Link className={styles.inlineLink} href={post.internalSibling}>our related guide to the next mortgage workflow</Link> and compare its handoff points with this one.
+                </p>
+              )}
+            </section>
+          ))}
+
+          {post.faq.length > 0 && (
+            <section className={styles.articleSection} id={headingId(faqHeading)}>
+              <h2>{faqHeading}</h2>
+              {post.faq.map((item) => (
+                <div key={item.q}>
+                  <h3>{item.q}</h3>
+                  <p>{item.a}</p>
+                </div>
+              ))}
+            </section>
+          )}
+
+          <section className={styles.finalCta} id={headingId(ctaHeading)}>
+            <p className={styles.railLabel}>From field note to operating brief</p>
+            <h2>{ctaHeading}</h2>
+            <p>Bring the recurring work that consumes the most attention. We will help define its scope, evidence, handoff, and review points.</p>
+            <Link id="cta-blog-final-bookcall" className={styles.button} href="/contact-us">Request a consultation</Link>
+          </section>
+        </article>
+
+        <EditorialSidebar
+          relatedLabel="Continue reading"
+          related={related.map((item) => ({ href: `/blog/${item.slug}`, label: item.title, kicker: item.category }))}
+          ctaTitle="Make one recurring workflow reviewable."
+          ctaBody="Start with the queue, source material, expected output, and accountable reviewer."
+          ctaId="cta-blog-sidebar-schedulecall"
+        />
+      </div>
+    </main>
+  );
 }

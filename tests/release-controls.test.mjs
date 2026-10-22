@@ -62,6 +62,8 @@ test('application publishes security headers compatible with tracking and OnceHu
     'Permissions-Policy',
   ]) assert.ok(config.includes(header), `missing ${header}`);
   assert.match(config, /script-src 'self' 'unsafe-inline' https:\/\/acrtracking\.stealthagents\.us/);
+  assert.match(config, /https:\/\/static\.cloudflareinsights\.com/);
+  assert.match(config, /connect-src[^\n]*https:\/\/cloudflareinsights\.com/);
   assert.match(config, /frame-src https:\/\/go\.oncehub\.com/);
   assert.match(config, /frame-ancestors 'none'/);
 });

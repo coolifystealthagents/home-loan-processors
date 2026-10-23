@@ -84,6 +84,7 @@ a,button,summary,input,select,textarea{accent-color:#742e2b}
 }
 @media(max-width:600px){
   h1{font-size:clamp(2.75rem,14vw,4rem)}
+  .thank-you-page .page-hero h1{font-size:clamp(2.75rem,12vw,3.4rem)}
   .site-header .brand span{max-width:190px;line-height:1.15}
   .footer-links{grid-template-columns:1fr 1fr}.footer-main{padding-inline:5vw}
   .scheduling-panel{padding-top:1rem}.booking-frame{min-width:0;height:720px;box-shadow:5px 5px 0 #d4b874}

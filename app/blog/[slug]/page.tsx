@@ -10,6 +10,7 @@ import { site } from '@/lib/site';
 import styles from '../editorial.module.css';
 
 const origin = `https://${site.domain}`;
+const formatPublishedDate = (date: string) => new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`));
 
 export function generateStaticParams() {
   return blogPosts.map(({ slug }) => ({ slug }));
@@ -89,7 +90,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <p className={styles.deck}>{post.description}</p>
           <p className={styles.byline}>
             <span>By {site.name} Editorial Team</span>
-            <span>Published <time dateTime={post.publishedAt}>{post.publishedAt}</time></span>
+            <span>Published <time dateTime={post.publishedAt}>{formatPublishedDate(post.publishedAt)}</time></span>
             <span>{post.readTime}</span>
           </p>
         </div>

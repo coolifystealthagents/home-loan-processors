@@ -10,6 +10,7 @@ import { site } from '@/lib/site';
 import styles from '@/app/blog/editorial.module.css';
 
 const origin = `https://${site.domain}`;
+const formatPublishedDate = (date: string) => new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`));
 
 function serviceForCluster(cluster: string) {
   const normalized = cluster.toLowerCase();
@@ -94,7 +95,7 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
           <p className={styles.deck}>{post.summary}</p>
           <p className={styles.byline}>
             <span>By {site.name} Editorial Team</span>
-            <span>Published <time dateTime={post.publishedAt}>{post.publishedAt}</time></span>
+            <span>Published <time dateTime={post.publishedAt}>{formatPublishedDate(post.publishedAt)}</time></span>
           </p>
         </div>
       </header>

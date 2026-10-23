@@ -122,7 +122,7 @@ test('legacy research is explicitly non-empirical and site metadata stays curren
     read('lib/content.ts'), read('app/sitemap.ts'), read('components/marketing/marketing.css'), read('app/globals.css'), read('components/LeadForm.tsx'),
     read('lib/oct12ResearchBatch.ts'), read('lib/oct13ResearchBatch.ts'),
   ]);
-  const legacy = content.match(/export const researchPosts: ResearchPost\[\] = \[\s*\.\.\.oct13ResearchBatch,\s*\.\.\.oct12ResearchBatch,([\s\S]*?)\n\];/)?.[1] ?? '';
+  const legacy = content.match(/export const researchPosts: ResearchPost\[\] = \[\s*\.\.\.october22ResearchBatch,\s*\.\.\.oct13ResearchBatch,\s*\.\.\.oct12ResearchBatch,([\s\S]*?)\n\];/)?.[1] ?? '';
   assert.ok(legacy, 'legacy research records should remain machine-verifiable');
   assert.doesNotMatch(legacy, /"title":.*\b(study|audit|report)\b/i);
   assert.doesNotMatch(legacy, /The most useful control/i);

@@ -4,8 +4,10 @@ import { oct12BlogBatch } from './oct12BlogBatch';
 import { oct12ResearchBatch } from './oct12ResearchBatch';
 import { oct13BlogBatch } from './oct13BlogBatch';
 import { oct13ResearchBatch } from './oct13ResearchBatch';
+import { october22BlogBatch, october22ResearchBatch } from './october22Batch';
 
 export const blogPosts: BlogPost[] = [
+  ...october22BlogBatch,
   ...oct13BlogBatch,
   ...oct12BlogBatch,
   {
@@ -475,6 +477,7 @@ export const blogPosts: BlogPost[] = [
   }
 ];
 export const researchPosts: ResearchPost[] = [
+  ...october22ResearchBatch,
   ...oct13ResearchBatch,
   ...oct12ResearchBatch,
   {

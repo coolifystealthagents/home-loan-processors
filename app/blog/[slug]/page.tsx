@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArticleToc } from '@/components/editorial/ArticleToc';
 import { EditorialSidebar } from '@/components/editorial/EditorialSidebar';
 import { headingId } from '@/components/editorial/headingId';
 import { blogPosts, blogBySlug } from '@/lib/content';
@@ -19,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = blogBySlug(slug);
   if (!post) return {};
-  const coverImage = post.thumbnail ?? `/visual/blog-${post.slug}`;
+  const socialImage = '/hero.png';
 
   return {
     title: post.title,
@@ -32,7 +31,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: post.description,
       url: `/blog/${post.slug}`,
       publishedTime: post.publishedAt,
-      images: [{ url: coverImage, alt: `Workflow illustration for “${post.title}”` }],
+      images: [{ url: socialImage, alt: `${post.title} from Home Loan Processors` }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      images: [socialImage],
     },
   };
 }
@@ -96,7 +101,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       </header>
 
       <div className={styles.articleShell}>
-        <ArticleToc items={tocItems} />
+        <EditorialSidebar
+          tocItems={tocItems}
+          publisher={`${site.name} Editorial Team`}
+          publishedAt={post.publishedAt}
+          readingTime={post.readTime}
+          relatedLabel="Continue reading"
+          related={related.map((item) => ({ href: `/blog/${item.slug}`, label: item.title, kicker: item.category }))}
+          ctaTitle="Make one recurring workflow reviewable."
+          ctaBody="Start with the queue, source material, expected output, and accountable reviewer."
+          ctaId="cta-blog-sidebar-schedulecall"
+        />
 
         <article className={styles.article}>
           <Image
@@ -150,13 +165,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </section>
         </article>
 
-        <EditorialSidebar
-          relatedLabel="Continue reading"
-          related={related.map((item) => ({ href: `/blog/${item.slug}`, label: item.title, kicker: item.category }))}
-          ctaTitle="Make one recurring workflow reviewable."
-          ctaBody="Start with the queue, source material, expected output, and accountable reviewer."
-          ctaId="cta-blog-sidebar-schedulecall"
-        />
       </div>
     </main>
   );

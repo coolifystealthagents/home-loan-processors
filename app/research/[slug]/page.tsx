@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArticleToc } from '@/components/editorial/ArticleToc';
 import { headingId } from '@/components/editorial/headingId';
 import { ResearchSidebar } from '@/components/ResearchSidebar';
 import { researchPosts, researchBySlug } from '@/lib/content';
@@ -28,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = researchBySlug(slug);
   if (!post) return {};
-  const coverImage = post.thumbnail ?? `/visual/research-${post.slug}`;
+  const socialImage = '/hero.png';
 
   return {
     title: post.title,
@@ -41,7 +40,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: post.summary,
       url: `/research/${post.slug}`,
       publishedTime: post.publishedAt,
-      images: [{ url: coverImage, alt: `Research workflow illustration for “${post.title}”` }],
+      images: [{ url: socialImage, alt: `${post.title} from Home Loan Processors research` }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.summary,
+      images: [socialImage],
     },
   };
 }
@@ -100,7 +105,7 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
       </header>
 
       <div className={styles.articleShell}>
-        <ArticleToc items={tocItems} />
+        <ResearchSidebar posts={related} tocItems={tocItems} publishedAt={post.publishedAt} />
 
         <article className={styles.article}>
           <Image
@@ -156,7 +161,6 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
           </section>
         </article>
 
-        <ResearchSidebar posts={related} />
       </div>
     </main>
   );

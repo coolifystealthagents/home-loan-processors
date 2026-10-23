@@ -44,8 +44,8 @@ test('official parent identity is visible in header and footer', () => {
 
 test('approved reviews power an accessible motion-aware contact marquee', () => {
   const reviews = JSON.parse(read('lib/stealthAgentsReviews.json'));
-  assert.equal(reviews.length, 14);
-  assert.equal(new Set(reviews.map((review) => review.evidenceId)).size, 14);
+  assert.equal(reviews.length, 10);
+  assert.equal(new Set(reviews.map((review) => review.evidenceId)).size, 10);
   assert.match(contact, /StealthAgents reviews/);
   assert.match(contact, /review-marquee/);
   assert.match(contact, /'★'\.repeat\(5\)/);

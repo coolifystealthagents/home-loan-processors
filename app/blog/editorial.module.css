@@ -86,15 +86,15 @@
 
 .articleShell {
   display: grid;
-  grid-template-columns: minmax(150px, 210px) minmax(0, 720px) minmax(210px, 280px);
+  grid-template-columns: minmax(250px, 310px) minmax(0, 740px);
   gap: clamp(2rem, 4vw, 4.5rem);
   align-items: start;
-  width: min(1380px, calc(100% - 3rem));
+  justify-content: center;
+  width: min(1160px, calc(100% - 3rem));
   margin: 0 auto;
   padding: 3rem 0 6rem;
 }
 
-.toc,
 .sidebar {
   position: sticky;
   top: 6rem;
@@ -110,7 +110,7 @@
 
 .toc ol {
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 2.25rem;
 }
 
 .toc li {
@@ -135,6 +135,11 @@
 }
 
 .toc a { text-decoration: none; }
+.activeTocItem a {
+  color: var(--oxblood);
+  font-weight: 800;
+  text-decoration: underline;
+}
 .toc a:hover,
 .toc a:focus-visible,
 .relatedList a:hover,
@@ -220,11 +225,25 @@
 }
 
 .sidebarSection,
+.articleMeta,
 .proofBlock,
 .sidebarCta {
   padding: 1.2rem 0;
   border-bottom: 1px solid var(--rule);
 }
+
+.articleMeta dl { margin: 0; }
+.articleMeta div {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.75rem;
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--rule);
+  font-size: 0.76rem;
+  line-height: 1.35;
+}
+.articleMeta dt { color: var(--muted); }
+.articleMeta dd { margin: 0; font-weight: 700; }
 
 .relatedList {
   margin: 0;
@@ -390,34 +409,31 @@
 
 @media (max-width: 1050px) {
   .articleShell {
-    grid-template-columns: minmax(140px, 190px) minmax(0, 1fr);
-  }
-  .sidebar {
-    position: static;
-    grid-column: 2;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    max-height: none;
-    overflow: visible;
+    grid-template-columns: minmax(210px, 260px) minmax(0, 1fr);
   }
 }
 
 @media (max-width: 720px) {
   .hero { padding-inline: 1.25rem; }
   .hero h1 { font-size: clamp(2.35rem, 13vw, 4rem); }
-  .articleShell,
-  .sidebar {
+  .articleShell {
     display: block;
     width: min(100% - 2rem, 720px);
   }
   .articleShell { padding-top: 1.5rem; }
-  .toc {
+  .sidebar {
+    display: block;
+    width: 100%;
     position: static;
     max-height: none;
     margin-bottom: 2.5rem;
     overflow: visible;
   }
+  .toc { margin-bottom: 0; }
+  .articleMeta,
+  .sidebarSection,
+  .proofBlock,
+  .sidebarCta { display: none; }
   .toc li { grid-template-columns: 1.75rem 1fr; }
   .article { font-size: 1rem; }
   .articleSection { margin-top: 2.7rem; }

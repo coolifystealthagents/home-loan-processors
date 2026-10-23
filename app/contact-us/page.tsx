@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   title: 'Contact Us | Mortgage Operations Staffing Consultation',
   description: 'Talk with Home Loan Processors about remote administrative support for borrower documents, loan file indexing, pipeline records, and closing preparation.',
   alternates: { canonical: '/contact-us' },
+  openGraph: { title: 'Mortgage operations staffing consultation', description: 'Map a focused remote support role around a clear mortgage operations workflow.', url: '/contact-us', images: [{ url: '/brand/stealth-agents-team.webp', alt: 'Stealth Agents managed service team in Bacolod' }] },
+  twitter: { card: 'summary_large_image', title: 'Mortgage operations staffing consultation', description: 'Map a focused remote support role around a clear mortgage operations workflow.', images: ['/brand/stealth-agents-team.webp'] },
 };
 
 const steps = [
@@ -30,6 +32,7 @@ function ReviewCards({ duplicate = false }: { duplicate?: boolean }) {
   return stealthAgentsReviews.map((review) => (
     <article className="review-card" key={`${duplicate ? 'duplicate-' : ''}${review.evidenceId}`} aria-hidden={duplicate || undefined}>
       <div className="review-stars" aria-label="5 out of 5 stars">{'★'.repeat(5)}</div>
+      <h3>Review from {review.name}</h3>
       <blockquote>“{review.quote}”</blockquote>
       <p><strong>{review.name}</strong><span>{review.role}</span></p>
     </article>
@@ -40,7 +43,7 @@ function ReviewMarquee() {
   return (
     <section className="review-panel" aria-labelledby="reviews-heading">
       <div className="review-heading">
-        <p id="reviews-heading">StealthAgents reviews</p>
+        <h2 id="reviews-heading">StealthAgents reviews</h2>
         <a href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">Source: StealthAgents</a>
       </div>
       <div className="review-marquee" tabIndex={0} aria-label="StealthAgents client reviews. Animation pauses while focused.">
@@ -92,10 +95,9 @@ export default function ContactPage() {
       <div className="contact-container parent-team-grid">
         <div className="team-image">
           <Image src="/brand/stealth-agents-team.webp" alt="Stealth Agents managed service team in Bacolod" fill sizes="(max-width: 900px) 100vw, 52vw" />
-          <span>Official team, Bacolod</span>
         </div>
         <div className="team-copy">
-          <div className="official-logo-plate"><Image src="/brand/stealth-agents-logo-black.png" alt="Stealth Agents" width={240} height={66} /></div>
+          <div className="official-logo-plate"><Image src="/brand/stealth-agents-logo-black.png" alt="Stealth Agents" width={240} height={66} /><span>Official team, Bacolod</span></div>
           <p className="eyebrow">Managed service support</p>
           <h2>Mortgage workflow focus, backed by a real team.</h2>
           <p>Stealth Agents helps businesses build remote support roles around documented workflows, selective candidate matching, and accountable handoffs. This managed service approach creates durable administrative capacity while your licensed professionals retain oversight and every lending decision.</p>

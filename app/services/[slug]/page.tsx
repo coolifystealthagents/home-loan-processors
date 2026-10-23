@@ -18,7 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: service.name,
     description: service.short,
     alternates: { canonical: `/services/${service.slug}` },
-    openGraph: { images: [{ url: `/visual/service-${service.slug}`, alt: `${service.name} workflow from client inputs to accountable review` }] },
+    openGraph: { title: service.name, description: service.short, url: `/services/${service.slug}`, images: [{ url: '/hero.png', alt: `${service.name} from Home Loan Processors` }] },
+    twitter: { card: 'summary_large_image', title: service.name, description: service.short, images: ['/hero.png'] },
   } : {};
 }
 
@@ -50,9 +51,19 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       acceptedAnswer: { '@type': 'Answer', text: item.answer },
     })),
   };
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: service.name,
+    description: service.short,
+    provider: { '@type': 'Organization', name: site.name, url: `https://${site.domain}` },
+    areaServed: 'Remote',
+    url: `https://${site.domain}/services/${service.slug}`,
+  };
 
   return <main className="mortgage-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd).replace(/</g, '\\u003c') }} />
     <header className="mortgage-service-hero">
       <div className="mortgage-service-hero-inner">
         <div className="mortgage-service-hero-copy">

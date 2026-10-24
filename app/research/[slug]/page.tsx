@@ -8,6 +8,7 @@ import { ResearchSidebar } from '@/components/ResearchSidebar';
 import { researchPosts, researchBySlug } from '@/lib/content';
 import { site } from '@/lib/site';
 import styles from '@/app/blog/editorial.module.css';
+import TocSync from '@/components/TocSync';
 
 const origin = `https://${site.domain}`;
 const formatPublishedDate = (date: string) => new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`));
@@ -84,7 +85,7 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
   };
 
   return (
-    <main className={styles.page} id="article-top">
+    <main className={styles.page} id="article-top"><TocSync />
       <div className={styles.progress} aria-hidden="true" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
 

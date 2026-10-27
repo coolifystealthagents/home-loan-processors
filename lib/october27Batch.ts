@@ -1346,7 +1346,6 @@ export const october27ResearchBatch: readonly ResearchPost[] = [
     "publishedAt": "2026-10-27",
     "finding": "In the Home Loan Processors home loan processing operation, the loan processor keeps the attributing rework in the disclosure packet evidence with the loan application and disclosure packet for the lending manager.",
     "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-attributing-rework-in-the-disclosure-packet-2026-10-27.webp",
-    "methodology": "A repeatable measurement protocol for the disclosure packet in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
         "heading": "Research question and scope",
@@ -1508,7 +1507,6 @@ export const october27ResearchBatch: readonly ResearchPost[] = [
     "publishedAt": "2026-10-27",
     "finding": "The Home Loan Processors loan processor prepares the capacity planning for the closing schedule entry from the loan application and disclosure packet, while the lending manager keeps the decision.",
     "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-capacity-planning-for-the-closing-schedule-2026-10-27.webp",
-    "methodology": "A repeatable measurement protocol for the closing schedule in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
         "heading": "Research question and scope",
@@ -1671,7 +1669,6 @@ export const october27ResearchBatch: readonly ResearchPost[] = [
     "publishedAt": "2026-10-27",
     "finding": "In the Home Loan Processors home loan processing operation, the loan processor keeps the early-warning signals in the denial record evidence with the loan application and disclosure packet for the lending manager.",
     "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-early-warning-signals-in-the-denial-record-2026-10-27.webp",
-    "methodology": "A repeatable measurement protocol for the denial record in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
         "heading": "Research question and scope",
@@ -1833,7 +1830,6 @@ export const october27ResearchBatch: readonly ResearchPost[] = [
     "publishedAt": "2026-10-27",
     "finding": "At Home Loan Processors, the loan processor applies this measuring response time for the title request control to the loan application and disclosure packet before the lending manager reviews the next action.",
     "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-measuring-response-time-for-the-title-request-2026-10-27.webp",
-    "methodology": "A repeatable measurement protocol for the title request in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
         "heading": "Research question and scope",
@@ -1996,7 +1992,6 @@ export const october27ResearchBatch: readonly ResearchPost[] = [
     "publishedAt": "2026-10-27",
     "finding": "In the Home Loan Processors home loan processing operation, the loan processor keeps the testing completeness in the condition list evidence with the loan application and disclosure packet for the lending manager.",
     "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-testing-completeness-in-the-condition-list-2026-10-27.webp",
-    "methodology": "A repeatable measurement protocol for the condition list in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
         "heading": "Research question and scope",

@@ -2,13 +2,13 @@ import type { BlogPost, ResearchPost } from './types';
 
 export const october27BlogBatch: readonly BlogPost[] = [
   {
-    "slug": "homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "slug": "homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "title": "Build an intake record for the loan application that survives review",
     "description": "A source-bounded mortgage loan processing guide for mortgage brokers and lenders, focused on the loan application and bounded by honest evidence.",
     "category": "Intake and Records",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the loan application needs its own control",
@@ -106,20 +106,20 @@ export const october27BlogBatch: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "source": {
       "label": "Freddie Mac",
       "url": "https://www.freddiemac.com/"
     }
   },
   {
-    "slug": "homeloanprocessors-map-the-source-of-truth-for-the-income-verification",
+    "slug": "homeloanprocessors-map-the-source-of-truth-for-the-income-verification-2026-10-27",
     "title": "Map the source of truth for the income verification",
     "description": "A source-bounded mortgage loan processing guide for mortgage brokers and lenders, focused on the income verification and bounded by honest evidence.",
     "category": "Intake and Records",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-map-the-source-of-truth-for-the-income-verification.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-map-the-source-of-truth-for-the-income-verification-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the income verification needs its own control",
@@ -217,20 +217,20 @@ export const october27BlogBatch: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "source": {
       "label": "Freddie Mac",
       "url": "https://www.freddiemac.com/"
     }
   },
   {
-    "slug": "homeloanprocessors-onboard-a-va-into-the-income-verification-workflow-in-the-first-week",
+    "slug": "homeloanprocessors-onboard-a-va-into-the-income-verification-workflow-in-the-first-week-2026-10-27",
     "title": "Onboard a VA into the income verification workflow in the first week",
     "description": "A source-bounded mortgage loan processing guide for mortgage brokers and lenders, focused on the income verification and bounded by honest evidence.",
     "category": "Handoff and Ownership",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-onboard-a-va-into-the-income-verification-workflow-in-the-first-week.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-onboard-a-va-into-the-income-verification-workflow-in-the-first-week-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the income verification needs its own control",
@@ -328,20 +328,20 @@ export const october27BlogBatch: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "source": {
       "label": "Federal Trade Commission",
       "url": "https://www.ftc.gov/"
     }
   },
   {
-    "slug": "homeloanprocessors-report-the-title-request-without-vanity-metrics",
+    "slug": "homeloanprocessors-report-the-title-request-without-vanity-metrics-2026-10-27",
     "title": "Report the title request without vanity metrics",
     "description": "A source-bounded mortgage loan processing guide for mortgage brokers and lenders, focused on the title request and bounded by honest evidence.",
     "category": "Reporting and Review",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-report-the-title-request-without-vanity-metrics.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-report-the-title-request-without-vanity-metrics-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the title request needs its own control",
@@ -439,20 +439,20 @@ export const october27BlogBatch: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "source": {
       "label": "Consumer Financial Protection Bureau",
       "url": "https://www.consumerfinance.gov/"
     }
   },
   {
-    "slug": "homeloanprocessors-review-access-before-changing-the-closing-schedule",
+    "slug": "homeloanprocessors-review-access-before-changing-the-closing-schedule-2026-10-27",
     "title": "Review access before changing the closing schedule",
     "description": "A source-bounded mortgage loan processing guide for mortgage brokers and lenders, focused on the closing schedule and bounded by honest evidence.",
     "category": "Access and Controls",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-review-access-before-changing-the-closing-schedule.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-review-access-before-changing-the-closing-schedule-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the closing schedule needs its own control",
@@ -550,20 +550,20 @@ export const october27BlogBatch: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "source": {
       "label": "Federal Trade Commission",
       "url": "https://www.ftc.gov/"
     }
   },
   {
-    "slug": "homeloanprocessors-run-a-weekly-review-for-the-loan-application",
+    "slug": "homeloanprocessors-run-a-weekly-review-for-the-loan-application-2026-10-27",
     "title": "Run a weekly review for the loan application",
     "description": "A source-bounded mortgage loan processing guide for mortgage brokers and lenders, focused on the loan application and bounded by honest evidence.",
     "category": "Reporting and Review",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-run-a-weekly-review-for-the-loan-application.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-run-a-weekly-review-for-the-loan-application-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the loan application needs its own control",
@@ -661,20 +661,20 @@ export const october27BlogBatch: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "source": {
       "label": "Consumer Financial Protection Bureau",
       "url": "https://www.consumerfinance.gov/"
     }
   },
   {
-    "slug": "homeloanprocessors-run-an-exception-queue-for-the-title-request",
+    "slug": "homeloanprocessors-run-an-exception-queue-for-the-title-request-2026-10-27",
     "title": "Run an exception queue for the title request",
     "description": "A source-bounded mortgage loan processing guide for mortgage brokers and lenders, focused on the title request and bounded by honest evidence.",
     "category": "Exceptions and Quality",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-run-an-exception-queue-for-the-title-request.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-run-an-exception-queue-for-the-title-request-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the title request needs its own control",
@@ -773,20 +773,20 @@ export const october27BlogBatch: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "source": {
       "label": "NMLS Consumer Access",
       "url": "https://www.nmlsconsumeraccess.org/"
     }
   },
   {
-    "slug": "homeloanprocessors-sample-quality-for-the-disclosure-packet-without-guessing",
+    "slug": "homeloanprocessors-sample-quality-for-the-disclosure-packet-without-guessing-2026-10-27",
     "title": "Sample quality for the disclosure packet without guessing",
     "description": "A source-bounded mortgage loan processing guide for mortgage brokers and lenders, focused on the disclosure packet and bounded by honest evidence.",
     "category": "Exceptions and Quality",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-sample-quality-for-the-disclosure-packet-without-guessing.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-sample-quality-for-the-disclosure-packet-without-guessing-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the disclosure packet needs its own control",
@@ -884,20 +884,20 @@ export const october27BlogBatch: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "source": {
       "label": "Consumer Financial Protection Bureau",
       "url": "https://www.consumerfinance.gov/"
     }
   },
   {
-    "slug": "homeloanprocessors-set-approval-boundaries-around-the-condition-list",
+    "slug": "homeloanprocessors-set-approval-boundaries-around-the-condition-list-2026-10-27",
     "title": "Set approval boundaries around the condition list",
     "description": "A source-bounded mortgage loan processing guide for mortgage brokers and lenders, focused on the condition list and bounded by honest evidence.",
     "category": "Handoff and Ownership",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-set-approval-boundaries-around-the-condition-list.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-set-approval-boundaries-around-the-condition-list-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the condition list needs its own control",
@@ -995,20 +995,20 @@ export const october27BlogBatch: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "source": {
       "label": "Consumer Financial Protection Bureau",
       "url": "https://www.consumerfinance.gov/"
     }
   },
   {
-    "slug": "homeloanprocessors-standardize-updates-to-the-denial-record-across-the-team",
+    "slug": "homeloanprocessors-standardize-updates-to-the-denial-record-across-the-team-2026-10-27",
     "title": "Standardize updates to the denial record across the team",
     "description": "A source-bounded mortgage loan processing guide for mortgage brokers and lenders, focused on the denial record and bounded by honest evidence.",
     "category": "Intake and Records",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-standardize-updates-to-the-denial-record-across-the-team.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-standardize-updates-to-the-denial-record-across-the-team-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the denial record needs its own control",
@@ -1107,20 +1107,20 @@ export const october27BlogBatch: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "source": {
       "label": "NMLS Consumer Access",
       "url": "https://www.nmlsconsumeraccess.org/"
     }
   },
   {
-    "slug": "homeloanprocessors-write-a-handoff-protocol-for-the-appraisal-packet",
+    "slug": "homeloanprocessors-write-a-handoff-protocol-for-the-appraisal-packet-2026-10-27",
     "title": "Write a handoff protocol for the appraisal packet",
     "description": "A source-bounded mortgage loan processing guide for mortgage brokers and lenders, focused on the appraisal packet and bounded by honest evidence.",
     "category": "Handoff and Ownership",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-write-a-handoff-protocol-for-the-appraisal-packet.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-write-a-handoff-protocol-for-the-appraisal-packet-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the appraisal packet needs its own control",
@@ -1218,20 +1218,20 @@ export const october27BlogBatch: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "source": {
       "label": "U.S. Department of Housing and Urban Development",
       "url": "https://www.hud.gov/"
     }
   },
   {
-    "slug": "homeloanprocessors-write-an-sop-for-the-appraisal-packet-that-people-use",
+    "slug": "homeloanprocessors-write-an-sop-for-the-appraisal-packet-that-people-use-2026-10-27",
     "title": "Write an SOP for the appraisal packet that people use",
     "description": "A source-bounded mortgage loan processing guide for mortgage brokers and lenders, focused on the appraisal packet and bounded by honest evidence.",
     "category": "Intake and Records",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-write-an-sop-for-the-appraisal-packet-that-people-use.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-write-an-sop-for-the-appraisal-packet-that-people-use-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the appraisal packet needs its own control",
@@ -1329,7 +1329,7 @@ export const october27BlogBatch: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review",
+    "internalSibling": "/blog/homeloanprocessors-build-an-intake-record-for-the-loan-application-that-survives-review-2026-10-27",
     "source": {
       "label": "Federal Trade Commission",
       "url": "https://www.ftc.gov/"
@@ -1339,13 +1339,13 @@ export const october27BlogBatch: readonly BlogPost[] = [
 
 export const october27ResearchBatch: readonly ResearchPost[] = [
   {
-    "slug": "homeloanprocessors-attributing-rework-in-the-disclosure-packet",
+    "slug": "homeloanprocessors-attributing-rework-in-the-disclosure-packet-2026-10-27",
     "title": "Attributing rework in the disclosure packet",
     "summary": "A repeatable measurement protocol for the disclosure packet in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "cluster": "Quality Analysis",
     "publishedAt": "2026-10-27",
     "finding": "This protocol asks how the disclosure packet can be described from the operational record in mortgage loan processing.",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-attributing-rework-in-the-disclosure-packet.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-attributing-rework-in-the-disclosure-packet-2026-10-27.webp",
     "methodology": "A repeatable measurement protocol for the disclosure packet in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
@@ -1501,13 +1501,13 @@ export const october27ResearchBatch: readonly ResearchPost[] = [
     ]
   },
   {
-    "slug": "homeloanprocessors-capacity-planning-for-the-closing-schedule",
+    "slug": "homeloanprocessors-capacity-planning-for-the-closing-schedule-2026-10-27",
     "title": "Capacity planning for the closing schedule",
     "summary": "A repeatable measurement protocol for the closing schedule in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "cluster": "Capacity and Coverage",
     "publishedAt": "2026-10-27",
     "finding": "This protocol asks how the closing schedule can be described from the operational record in mortgage loan processing.",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-capacity-planning-for-the-closing-schedule.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-capacity-planning-for-the-closing-schedule-2026-10-27.webp",
     "methodology": "A repeatable measurement protocol for the closing schedule in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
@@ -1664,13 +1664,13 @@ export const october27ResearchBatch: readonly ResearchPost[] = [
     ]
   },
   {
-    "slug": "homeloanprocessors-early-warning-signals-in-the-denial-record",
+    "slug": "homeloanprocessors-early-warning-signals-in-the-denial-record-2026-10-27",
     "title": "Early-warning signals in the denial record",
     "summary": "A repeatable measurement protocol for the denial record in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "cluster": "Risk Review",
     "publishedAt": "2026-10-27",
     "finding": "This protocol asks how the denial record can be described from the operational record in mortgage loan processing.",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-early-warning-signals-in-the-denial-record.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-early-warning-signals-in-the-denial-record-2026-10-27.webp",
     "methodology": "A repeatable measurement protocol for the denial record in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
@@ -1826,13 +1826,13 @@ export const october27ResearchBatch: readonly ResearchPost[] = [
     ]
   },
   {
-    "slug": "homeloanprocessors-measuring-response-time-for-the-title-request",
+    "slug": "homeloanprocessors-measuring-response-time-for-the-title-request-2026-10-27",
     "title": "Measuring response time for the title request",
     "summary": "A repeatable measurement protocol for the title request in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "cluster": "Measurement",
     "publishedAt": "2026-10-27",
     "finding": "This protocol asks how the title request can be described from the operational record in mortgage loan processing.",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-measuring-response-time-for-the-title-request.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-measuring-response-time-for-the-title-request-2026-10-27.webp",
     "methodology": "A repeatable measurement protocol for the title request in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
@@ -1989,13 +1989,13 @@ export const october27ResearchBatch: readonly ResearchPost[] = [
     ]
   },
   {
-    "slug": "homeloanprocessors-testing-completeness-in-the-condition-list",
+    "slug": "homeloanprocessors-testing-completeness-in-the-condition-list-2026-10-27",
     "title": "Testing completeness in the condition list",
     "summary": "A repeatable measurement protocol for the condition list in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "cluster": "Measurement",
     "publishedAt": "2026-10-27",
     "finding": "This protocol asks how the condition list can be described from the operational record in mortgage loan processing.",
-    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-testing-completeness-in-the-condition-list.webp",
+    "thumbnail": "/article-thumbnails/october-27/homeloanprocessors-testing-completeness-in-the-condition-list-2026-10-27.webp",
     "methodology": "A repeatable measurement protocol for the condition list in mortgage loan processing, with definitions, sampling, limits, and reporting.",
     "sections": [
       {

@@ -8,7 +8,6 @@ import { ResearchSidebar } from '@/components/ResearchSidebar';
 import { researchPosts, researchBySlug } from '@/lib/content';
 import { site } from '@/lib/site';
 import styles from '@/app/blog/editorial.module.css';
-import TocSync from '@/components/TocSync';
 
 const origin = `https://${site.domain}`;
 const formatPublishedDate = (date: string) => new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`));
@@ -30,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = researchBySlug(slug);
   if (!post) return {};
-  const coverImage = post.thumbnail ?? `/visual/research-${post.slug}`;
+  const coverImage = (post.thumbnail ?? `/visual/research-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/');
 
   return {
     title: post.title,
@@ -52,7 +51,8 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
   const { slug } = await params;
   const post = researchBySlug(slug);
   if (!post) notFound();
-  const coverImage = post.thumbnail ?? `/visual/research-${post.slug}`;
+  const coverImage = (post.thumbnail ?? `/visual/research-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/');
+  const heroImage = post.heroImage ?? coverImage;
 
   const sameCluster = researchPosts.filter((item) => item.slug !== post.slug && item.cluster === post.cluster);
   const related = (sameCluster.length > 0
@@ -85,7 +85,7 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
   };
 
   return (
-    <main className={styles.page} id="article-top"><TocSync />
+    <main className={styles.page} id="article-top">
       <div className={styles.progress} aria-hidden="true" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
 
@@ -107,8 +107,8 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
         <article className={styles.article}>
           <Image
             className={styles.cover}
-            src={coverImage}
-            alt={`Research workflow illustration for “${post.title}”`}
+            src={heroImage}
+            alt={`Editorial photograph for “${post.title}”`}
             width={1200}
             height={630}
             priority

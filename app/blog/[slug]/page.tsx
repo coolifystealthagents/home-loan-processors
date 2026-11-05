@@ -8,7 +8,6 @@ import { headingId } from '@/components/editorial/headingId';
 import { blogPosts, blogBySlug } from '@/lib/content';
 import { site } from '@/lib/site';
 import styles from '../editorial.module.css';
-import TocSync from '@/components/TocSync';
 
 const origin = `https://${site.domain}`;
 const formatPublishedDate = (date: string) => new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`));
@@ -21,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = blogBySlug(slug);
   if (!post) return {};
-  const coverImage = post.thumbnail ?? `/visual/blog-${post.slug}`;
+  const coverImage = (post.thumbnail ?? `/visual/blog-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/');
 
   return {
     title: post.title,
@@ -43,7 +42,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const post = blogBySlug(slug);
   if (!post) notFound();
-  const coverImage = post.thumbnail ?? `/visual/blog-${post.slug}`;
+  const coverImage = (post.thumbnail ?? `/visual/blog-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/');
+  const heroImage = post.heroImage ?? coverImage;
 
   const sameCategory = blogPosts.filter((item) => item.slug !== post.slug && item.category === post.category);
   const related = (sameCategory.length > 0
@@ -79,7 +79,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   } : null;
 
   return (
-    <main className={styles.page} id="article-top"><TocSync />
+    <main className={styles.page} id="article-top">
       <div className={styles.progress} aria-hidden="true" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, '\\u003c') }} />}
@@ -103,8 +103,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <article className={styles.article}>
           <Image
             className={styles.cover}
-            src={coverImage}
-            alt={`Workflow illustration for “${post.title}”`}
+            src={heroImage}
+            alt={`Editorial photograph for “${post.title}”`}
             width={1200}
             height={630}
             priority

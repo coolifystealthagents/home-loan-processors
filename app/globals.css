@@ -88,3 +88,11 @@ a,button,summary,input,select,textarea{accent-color:#742e2b}
   .footer-links{grid-template-columns:1fr 1fr}.footer-main{padding-inline:5vw}
   .scheduling-panel{padding-top:1rem}.booking-frame{min-width:0;height:720px;box-shadow:5px 5px 0 #d4b874}
 }
+
+/* Daily batch listing cards: title composite, 16:9 media, readable title */
+.card-thumbnail{display:block;width:calc(100% + 4rem);max-width:none;aspect-ratio:16/9;object-fit:cover;margin:-2rem -2rem 1.5rem;border-bottom:1px solid color-mix(in srgb,var(--ink) 15%,transparent)}
+.article-card h2,.content-card h2{font-size:clamp(1.25rem,1.7vw,1.6rem);line-height:1.16}
+.card-meta{margin:1rem 0 0;color:color-mix(in srgb,var(--ink) 62%,transparent);font-size:.8rem;line-height:1.5}
+.card-meta time{font-weight:700}
+@media(max-width:600px){.card-thumbnail{width:calc(100% + 2.7rem);margin:-1.35rem -1.35rem 1.35rem}.content-card,.article-card{padding:1.35rem}}
+.card-thumbnail{height:auto;aspect-ratio:16/9;object-fit:cover;width:100%;display:block}

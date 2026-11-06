@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = blogBySlug(slug);
   if (!post) return {};
-  const coverImage = (post.thumbnail ?? `/visual/blog-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/');
+  const coverImage = (post.thumbnail ?? `/visual/blog-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/').replace('/thumbnails/november-06/', '/thumbnails/november-06/hero/');
 
   return {
     title: post.title,
@@ -42,7 +42,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const post = blogBySlug(slug);
   if (!post) notFound();
-  const coverImage = (post.thumbnail ?? `/visual/blog-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/');
+  const coverImage = (post.thumbnail ?? `/visual/blog-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/').replace('/thumbnails/november-06/', '/thumbnails/november-06/hero/');
   const heroImage = post.heroImage ?? coverImage;
 
   const sameCategory = blogPosts.filter((item) => item.slug !== post.slug && item.category === post.category);
@@ -91,7 +91,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <p className={styles.deck}>{post.description}</p>
           <p className={styles.byline}>
             <span>By {site.name} Editorial Team</span>
-            <span>Published <time dateTime={post.publishedAt}>{formatPublishedDate(post.publishedAt)}</time></span>
+            <span><time dateTime={post.publishedAt}>{`Published ${formatPublishedDate(post.publishedAt)}`}</time></span>
             <span>{post.readTime}</span>
           </p>
         </div>

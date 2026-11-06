@@ -154,15 +154,7 @@
 @media (max-width: 720px) {
   .toc { display: none; }
   .mobileToc {
-    display: block;
-    position: static;
-    margin: 0 0 1.4rem;
-    width: 100%;
-    max-width: none;
-    border: 1px solid var(--ink);
-    border-radius: 12px;
-    background: var(--canvas, #f7f2e8);
-    box-shadow: 0 8px 20px rgba(20, 24, 28, 0.1);
+    display: contents;
   }
   .mobileToc summary {
     display: flex;
@@ -170,14 +162,22 @@
     justify-content: space-between;
     gap: 0.7rem;
     min-height: 44px;
+    margin: 0 0 1.4rem;
     padding: 0.55rem 0.95rem;
     color: var(--ink);
+    background: #fff;
+    border: 1px solid var(--ink);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(20, 24, 28, 0.1);
     font-size: 0.74rem;
     font-weight: 800;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     cursor: pointer;
     list-style: none;
+    position: sticky;
+    top: 76px;
+    z-index: 12;
   }
   .mobileToc summary::-webkit-details-marker { display: none; }
   .mobileToc summary span {
@@ -193,16 +193,19 @@
     line-height: 1;
   }
   .mobileToc[open] summary::after { content: '-'; }
+  .mobileToc[open] summary { margin-bottom: 0; border-radius: 12px 12px 0 0; }
   .mobileToc nav {
     position: static;
     width: auto;
     max-height: 50vh;
     overflow: auto;
-    border: 0;
+    border: 1px solid var(--ink);
     border-top: 1px solid var(--rule);
+    border-radius: 0 0 12px 12px;
     background: #fff;
     box-shadow: none;
     padding: 0.5rem 1rem 0.9rem;
+    margin: 0 0 1.4rem;
   }
   .mobileToc ol {
     margin: 0;

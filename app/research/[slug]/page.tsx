@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = researchBySlug(slug);
   if (!post) return {};
-  const coverImage = (post.thumbnail ?? `/visual/research-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/').replace('/thumbnails/november-06/', '/thumbnails/november-06/hero/').replace('/thumbnails/november-07/', '/thumbnails/november-07/hero/').replace('/thumbnails/november-08/', '/thumbnails/november-08/hero/');
+  const coverImage = (post.thumbnail ?? `/visual/research-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/').replace('/thumbnails/november-06/', '/thumbnails/november-06/hero/').replace('/thumbnails/november-07/', '/thumbnails/november-07/hero/').replace('/thumbnails/november-08/', '/thumbnails/november-08/hero/').replace('/thumbnails/november-09/', '/thumbnails/november-09/hero/');
 
   return {
     title: post.title,
@@ -51,7 +51,7 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
   const { slug } = await params;
   const post = researchBySlug(slug);
   if (!post) notFound();
-  const coverImage = (post.thumbnail ?? `/visual/research-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/').replace('/thumbnails/november-06/', '/thumbnails/november-06/hero/').replace('/thumbnails/november-07/', '/thumbnails/november-07/hero/').replace('/thumbnails/november-08/', '/thumbnails/november-08/hero/');
+  const coverImage = (post.thumbnail ?? `/visual/research-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/').replace('/thumbnails/november-06/', '/thumbnails/november-06/hero/').replace('/thumbnails/november-07/', '/thumbnails/november-07/hero/').replace('/thumbnails/november-08/', '/thumbnails/november-08/hero/').replace('/thumbnails/november-09/', '/thumbnails/november-09/hero/');
   const heroImage = post.heroImage ?? coverImage;
 
   const sameCluster = researchPosts.filter((item) => item.slug !== post.slug && item.cluster === post.cluster);

@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = blogBySlug(slug);
   if (!post) return {};
-  const coverImage = (post.thumbnail ?? `/visual/blog-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/').replace('/thumbnails/november-06/', '/thumbnails/november-06/hero/').replace('/thumbnails/november-07/', '/thumbnails/november-07/hero/');
+  const coverImage = (post.thumbnail ?? `/visual/blog-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/').replace('/thumbnails/november-06/', '/thumbnails/november-06/hero/').replace('/thumbnails/november-07/', '/thumbnails/november-07/hero/').replace('/thumbnails/november-08/', '/thumbnails/november-08/hero/');
 
   return {
     title: post.title,
@@ -42,7 +42,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const post = blogBySlug(slug);
   if (!post) notFound();
-  const coverImage = (post.thumbnail ?? `/visual/blog-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/').replace('/thumbnails/november-06/', '/thumbnails/november-06/hero/').replace('/thumbnails/november-07/', '/thumbnails/november-07/hero/');
+  const coverImage = (post.thumbnail ?? `/visual/blog-${post.slug}`).replace('/thumbnails/november-05/', '/thumbnails/november-05/hero/').replace('/thumbnails/november-06/', '/thumbnails/november-06/hero/').replace('/thumbnails/november-07/', '/thumbnails/november-07/hero/').replace('/thumbnails/november-08/', '/thumbnails/november-08/hero/');
   const heroImage = post.heroImage ?? coverImage;
 
   const sameCategory = blogPosts.filter((item) => item.slug !== post.slug && item.category === post.category);

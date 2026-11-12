@@ -39,8 +39,8 @@
   "servicesImageAlt": "Real estate agent discussing property paperwork with a couple on a porch.",
   "blogImage": "/refresh-20261112/blog.webp",
   "blogImageAlt": "A financial advisor discusses paperwork with a client at a desk in a modern office.",
-  "researchImage": "/refresh-20261112/research.webp",
-  "researchImageAlt": "A diverse couple signing documents with a realtor in a new home setting.",
+  "researchImage": "/refresh-20261112/research-v2.webp",
+  "researchImageAlt": "Couple reviewing documents with a real estate professional",
   "services": [
     {
       "slug": "borrower-document-support",
@@ -381,8 +381,8 @@
       "slug": "closing-preparation",
       "title": "Closing preparation support",
       "description": "Organize milestone records and review-ready closing packets.",
-      "image": "/refresh-20261112/service5.webp",
-      "alt": "Pregnant couple reviewing property documents with a real estate agent in a bright modern interior.",
+      "image": "/refresh-20261112/service5-v2.webp",
+      "alt": "Family reviewing and signing home purchase documents with an agent",
       "audience": [
         "Teams coordinating many administrative closing milestones",
         "Queues where schedule changes are reconstructed manually"

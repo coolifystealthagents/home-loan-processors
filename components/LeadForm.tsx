@@ -36,10 +36,9 @@ export function LeadForm() {
     {privacyRequest && <p className="form-help form-wide">For access, correction, or deletion requests, only your name, email address, and a description of the request are required.</p>}
     <label>First Name <span aria-hidden="true">*</span><input name="first_name" autoComplete="given-name" maxLength={80} required /></label>
     <label>Last Name <span aria-hidden="true">*</span><input name="last_name" autoComplete="family-name" maxLength={80} required /></label>
-    <label className="form-wide">Email <span aria-hidden="true">*</span><input name="email" type="email" autoComplete="email" maxLength={254} required /></label>
-    <p className="form-help form-wide">Work or personal email addresses are welcome.</p>
-    <label>Country code<select name="phone_country" defaultValue="+1" aria-label="Phone country code"><option value="+1">US/CA +1</option><option value="+44">UK +44</option><option value="+61">AU +61</option><option value="+63">PH +63</option><option value="other">Other</option></select></label>
-    <label>Phone Number<input name="phone" type="tel" autoComplete="tel-national" inputMode="tel" maxLength={40} /></label>
+    <label className="form-wide">Email <span aria-hidden="true">*</span><input name="email" type="email" autoComplete="email" maxLength={254} required /><small>Work or personal email addresses are welcome.</small></label>
+    
+    <label>Phone Number<span className="sa-phone"><select name="phone_country" defaultValue="+1" aria-label="Phone country code"><option value="+1">US/CA +1</option><option value="+44">UK +44</option><option value="+61">AU +61</option><option value="+63">PH +63</option><option value="other">Other</option></select><input name="phone" type="tel" autoComplete="tel-national" inputMode="tel" maxLength={40} /></span></label>
     {!privacyRequest && <>
       <label className="form-wide">Company Name <span aria-hidden="true">*</span><input name="company" autoComplete="organization" maxLength={160} required={!privacyRequest} /></label>
       <label className="form-wide">Website / URL<input name="company_website" type="url" autoComplete="url" placeholder="https://" maxLength={300} /></label>

@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
 import { parseLeadForm, readLimitedBody, trustedFormOrigin } from '../../../lib/lead-contract';
-import { deliverLead } from '../../../lib/lead-delivery';
 import { createRateLimiter, trustedClientKey } from '../../../lib/rate-limit';
 
 const WINDOW_MS = 10 * 60 * 1_000;
@@ -22,8 +21,6 @@ export async function POST(request: Request) {
   if (form.get('website_url')) return NextResponse.json({ ok: true });
   const parsed = parseLeadForm(form);
   if (!parsed.ok) return NextResponse.json(parsed, { status: 400 });
-  const lead = { ...parsed.lead, userAgent: request.headers.get('user-agent') || '' };
-  const delivered = await deliverLead(lead, { primaryPayload: parsed.forwardPayload });
-  if (!delivered) return NextResponse.json({ ok: false, message: 'We could not send your request. Please try again.' }, { status: 503 });
+  // Validation only. ACR is the sole lead and notification sender.
   return NextResponse.json({ ok: true });
 }

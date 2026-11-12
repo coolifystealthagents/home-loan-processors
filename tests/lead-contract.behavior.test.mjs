@@ -63,11 +63,11 @@ test('delivery succeeds only after the primary sink confirms the allowlisted pay
   assert.deepEqual(calls, [{ url: 'https://primary.test/leads', body: primaryPayload }]);
 });
 
-test('delivery awaits fallback when the primary sink fails', async () => {
+test('delivery never sends directly to Mattermost when the primary sink fails', async () => {
   const calls = [];
   const delivered = await deliverLead(lead, { endpoint: 'https://primary.test/leads', fallbackWebhook: 'https://fallback.test/hook', fetcher: async (url) => { calls.push(String(url)); return new Response('', { status: calls.length === 1 ? 503 : 200 }); } });
-  assert.equal(delivered, true);
-  assert.deepEqual(calls, ['https://primary.test/leads', 'https://fallback.test/hook']);
+  assert.equal(delivered, false);
+  assert.deepEqual(calls, ['https://primary.test/leads']);
 });
 
 test('delivery fails when no server-side sink confirms receipt', async () => {

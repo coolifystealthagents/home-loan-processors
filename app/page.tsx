@@ -1,2 +1,3 @@
-import { HomePage } from '@/components/Marketing';
-export default function Page() { return <HomePage />; }
+import {HomeExperience} from './refresh-experience';
+
+export default function Home(){return <><main id="main-content"><HomeExperience/></main></>}

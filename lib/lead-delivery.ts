@@ -38,8 +38,6 @@ async function confirmed(fetcher: Fetcher, url: string, init: RequestInit): Prom
 export async function deliverLead(lead: LeadPayload, options: DeliveryOptions = {}): Promise<boolean> {
   const fetcher = options.fetcher ?? fetch;
   const endpoint = options.endpoint ?? process.env.ACR_LEAD_ENDPOINT ?? '';
-  const fallbackWebhook = options.fallbackWebhook ?? process.env.SITE_MATTERMOST_FALLBACK_WEBHOOK_URL ?? '';
   if (endpoint && await confirmed(fetcher, endpoint, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(options.primaryPayload ?? lead) })) return true;
-  if (fallbackWebhook && await confirmed(fetcher, fallbackWebhook, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ text: formatMattermostLead(lead) }) })) return true;
   return false;
 }

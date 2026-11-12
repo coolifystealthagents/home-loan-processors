@@ -1,11 +1,14 @@
 'use client';
-import { FormEvent, useState } from 'react';
+import {submitAcrLead} from '../app/acr-submit';
+
+import { FormEvent, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 const SOURCE = 'contact-page-consultation';
 
 export function LeadForm() {
   const router = useRouter();
+  const submissionLock=useRef(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const [requestType, setRequestType] = useState<'consultation' | 'privacy'>('consultation');
@@ -14,20 +17,21 @@ export function LeadForm() {
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (busy) return;
-    setBusy(true); setError('');
+    if(submissionLock.current)return;submissionLock.current=true;setBusy(true); setError('');
     const data = new FormData(event.currentTarget);
+    if(String(data.get('website_url')||'').trim())return;
     data.set('_page_url', window.location.href);
     try {
       const response = await fetch('/api/submit-lead', { method: 'POST', body: data });
       const result = await response.json();
-      if (!response.ok || !result.ok) { setError(result.message || 'Please check your details and try again.'); setBusy(false); return; }
+      if (!response.ok || !result.ok) { setError(result.message || 'Please check your details and try again.'); submissionLock.current=false;setBusy(false); return; }
       const payload = Object.fromEntries(data.entries()); delete payload.website_url;
-      /* ACR captures the native submit event once. */
+      submitAcrLead(payload,privacyRequest?'privacy-request':'contact-form');
       router.push('/thank-you');
-    } catch { setError('We could not send your request. Please try again.'); setBusy(false); }
+    } catch { setError('We could not send your request. Please try again.'); submissionLock.current=false;setBusy(false); }
   }
 
-  return <form className="lead-form" onSubmit={submit}>
+  return <form data-acr-lead-mode="manual" className="lead-form" onSubmit={submit}>
     <label className="form-wide">Request type <span aria-hidden="true">*</span><select name="request_type" value={requestType} onChange={(event) => setRequestType(event.target.value as 'consultation' | 'privacy')} required><option value="consultation">Mortgage workflow consultation</option><option value="privacy">Privacy request</option></select></label>
     {privacyRequest && <p className="form-help form-wide">For access, correction, or deletion requests, only your name, email address, and a description of the request are required.</p>}
     <label>First Name <span aria-hidden="true">*</span><input name="first_name" autoComplete="given-name" maxLength={80} required /></label>

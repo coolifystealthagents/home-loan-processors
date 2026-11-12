@@ -1,0 +1,558 @@
+{
+  "theme": "homeloan",
+  "domain": "homeloanprocessors.com",
+  "brand": "Home Loan Processors",
+  "short": "A better-prepared file.",
+  "headline": "Every file.",
+  "accent": "Moving forward.",
+  "intro": "Mortgage administrative support for the details between milestones. Organize borrower documents, follow-ups, pipeline records, and closing preparation so your licensed team can focus on the decisions.",
+  "eyebrow": "Dedicated support for the life of a loan file",
+  "cta": "Plan your mortgage support",
+  "serviceTitle": "Clear support at every handoff.",
+  "serviceIntro": "Bring the queue that slows your team down. We help keep source documents, next steps, and unresolved questions connected, with lending decisions firmly in your hands.",
+  "storyTitle": "A file should tell a complete story.",
+  "story": "From the first document request to the final review, every record needs context. Dedicated support helps the next person see what is current, what is missing, and who owns the next step.",
+  "footer": "Mortgage administrative support for document coordination, file organization, borrower follow-up, and closing preparation.",
+  "contact": "Let\u2019s build a clearer path through your pipeline.",
+  "prepare": [
+    "Your loan workflow and the queue needing support",
+    "The document systems and communication rules",
+    "Your authorized reviewer and escalation process"
+  ],
+  "pillars": [
+    [
+      "Know the next step",
+      "Connect requests and dates to a clear file milestone."
+    ],
+    [
+      "Keep the evidence together",
+      "Maintain current versions, source notes, and unresolved items in approved systems."
+    ],
+    [
+      "Keep judgment with your team",
+      "Licensed staff retain underwriting, disclosures, pricing, and lending decisions."
+    ]
+  ],
+  "homeImage": "/refresh-20261112/home.webp",
+  "homeImageAlt": "A mortgage broker and client discussing loan options in a modern office setting.",
+  "servicesImage": "/refresh-20261112/services.webp",
+  "servicesImageAlt": "Real estate agent discussing property paperwork with a couple on a porch.",
+  "blogImage": "/refresh-20261112/blog.webp",
+  "blogImageAlt": "A financial advisor discusses paperwork with a client at a desk in a modern office.",
+  "researchImage": "/refresh-20261112/research.webp",
+  "researchImageAlt": "A diverse couple signing documents with a realtor in a new home setting.",
+  "services": [
+    {
+      "slug": "borrower-document-support",
+      "title": "Borrower document support",
+      "description": "Keep approved document requests, receipt status, and review handoffs organized.",
+      "image": "/refresh-20261112/service0.webp",
+      "alt": "A real estate agent assists a client with home buying paperwork indoors.",
+      "audience": [
+        "Teams losing time to repeated document-status checks",
+        "Operations with approved borrower reminder language"
+      ],
+      "problem": "A visible borrower-document queue with source notes, status, next owner, and exceptions ready for authorized review.",
+      "inputs": [
+        "Approved document-request matrix",
+        "Borrower communication templates",
+        "Authorized systems and access rules",
+        "Named reviewer and escalation rules"
+      ],
+      "work": [
+        "Prepare approved request checklists",
+        "Send approved reminders through authorized channels",
+        "Record receipt and version status",
+        "Index materials in approved systems",
+        "Escalate missing, conflicting, or sensitive items"
+      ],
+      "outputs": [
+        "Current request and receipt register",
+        "Indexed document set with source notes",
+        "Exception queue for authorized review",
+        "Factual borrower follow-up record"
+      ],
+      "controls": [
+        "Required-field and source check",
+        "Duplicate and superseded-version check",
+        "Sample review by the client owner",
+        "Immediate routing of substantive borrower questions"
+      ],
+      "boundaries": [
+        "No credit, underwriting, eligibility, pricing, disclosure, approval, or lending decisions.",
+        "No legal, tax, financial, compliance, or regulatory advice or interpretation.",
+        "No movement of funds, verification of wire changes, or approval of borrower-facing commitments.",
+        "Client personnel retain supervision, permissions, privacy obligations, and every licensed decision."
+      ],
+      "scenarios": [
+        "Teams losing time to repeated document-status checks",
+        "Operations with approved borrower reminder language"
+      ],
+      "workflow": [
+        "Map one queue. Identify where work enters, the system of record, the current owner, and the exceptions that consume licensed attention.",
+        "Set the boundary. Document permitted actions, prohibited decisions, approved language, access limits, and the client reviewer.",
+        "Run a controlled sample. Begin with a small file set, inspect every output, and record missing inputs or unclear escalation triggers.",
+        "Review and expand. Use observed quality and exceptions to improve the checklist before adding volume or adjacent work."
+      ],
+      "faqs": [
+        {
+          "question": "Who remains accountable for the work?",
+          "answer": "Your authorized mortgage team retains supervision, review, compliance, privacy, and every licensed or regulated decision."
+        },
+        {
+          "question": "Can the role begin with one workflow?",
+          "answer": "Yes. A narrow queue with a known source, completion standard, reviewer, and escalation path is the safest starting point."
+        },
+        {
+          "question": "How is quality reviewed?",
+          "answer": "The client reviews a defined sample against visible completion and escalation criteria, then updates the workflow when patterns appear."
+        }
+      ]
+    },
+    {
+      "slug": "loan-file-indexing",
+      "title": "Loan file indexing",
+      "description": "Maintain clear document names, locations, versions, and review status.",
+      "image": "/refresh-20261112/service1.webp",
+      "alt": "Real estate agent reviewing property documents with a client.",
+      "audience": [
+        "Teams with fragmented or inconsistently named file records",
+        "Queues where reviewers repeatedly reconstruct version history"
+      ],
+      "problem": "A review-ready file index that lets the authorized team find the current evidence and see unresolved conflicts.",
+      "inputs": [
+        "File taxonomy and naming standard",
+        "Approved repositories and permissions",
+        "Required index fields",
+        "Retention and escalation rules"
+      ],
+      "work": [
+        "Classify approved file types",
+        "Apply documented naming rules",
+        "Maintain document indexes",
+        "Record source and receipt dates",
+        "Flag duplicate, stale, or conflicting records"
+      ],
+      "outputs": [
+        "Current loan-file index",
+        "Version and duplicate exception list",
+        "Missing-metadata queue",
+        "Review-ready file map"
+      ],
+      "controls": [
+        "Index completeness check",
+        "File-to-register reconciliation",
+        "Version-currentness review",
+        "Exception sample reviewed by the client"
+      ],
+      "boundaries": [
+        "No credit, underwriting, eligibility, pricing, disclosure, approval, or lending decisions.",
+        "No legal, tax, financial, compliance, or regulatory advice or interpretation.",
+        "No movement of funds, verification of wire changes, or approval of borrower-facing commitments.",
+        "Client personnel retain supervision, permissions, privacy obligations, and every licensed decision."
+      ],
+      "scenarios": [
+        "Teams with fragmented or inconsistently named file records",
+        "Queues where reviewers repeatedly reconstruct version history"
+      ],
+      "workflow": [
+        "Map one queue. Identify where work enters, the system of record, the current owner, and the exceptions that consume licensed attention.",
+        "Set the boundary. Document permitted actions, prohibited decisions, approved language, access limits, and the client reviewer.",
+        "Run a controlled sample. Begin with a small file set, inspect every output, and record missing inputs or unclear escalation triggers.",
+        "Review and expand. Use observed quality and exceptions to improve the checklist before adding volume or adjacent work."
+      ],
+      "faqs": [
+        {
+          "question": "Who remains accountable for the work?",
+          "answer": "Your authorized mortgage team retains supervision, review, compliance, privacy, and every licensed or regulated decision."
+        },
+        {
+          "question": "Can the role begin with one workflow?",
+          "answer": "Yes. A narrow queue with a known source, completion standard, reviewer, and escalation path is the safest starting point."
+        },
+        {
+          "question": "How is quality reviewed?",
+          "answer": "The client reviews a defined sample against visible completion and escalation criteria, then updates the workflow when patterns appear."
+        }
+      ]
+    },
+    {
+      "slug": "pipeline-records",
+      "title": "Pipeline record support",
+      "description": "Keep approved milestones, ownership, and next actions accurate.",
+      "image": "/refresh-20261112/service2.webp",
+      "alt": "Mortgage broker and client sealing a deal with a handshake in a bright, modern office.",
+      "audience": [
+        "Teams rebuilding status from inboxes and meetings",
+        "Pipelines with unclear ownership or stale next actions"
+      ],
+      "problem": "A readable pipeline record in the designated system, with stale items and decision-dependent exceptions surfaced.",
+      "inputs": [
+        "Field dictionary and source hierarchy",
+        "Milestone definitions",
+        "Ownership rules",
+        "Update and escalation thresholds"
+      ],
+      "work": [
+        "Update approved administrative fields",
+        "Maintain milestone notes and next-owner records",
+        "Prepare factual pipeline summaries",
+        "Reconcile approved source systems",
+        "Flag stale or conflicting status"
+      ],
+      "outputs": [
+        "Current pipeline register",
+        "Stale-record and mismatch queue",
+        "Factual milestone summary",
+        "Next-owner report"
+      ],
+      "controls": [
+        "Required-field check",
+        "Source-of-truth reconciliation",
+        "Timestamp and ownership review",
+        "Client review of status exceptions"
+      ],
+      "boundaries": [
+        "No credit, underwriting, eligibility, pricing, disclosure, approval, or lending decisions.",
+        "No legal, tax, financial, compliance, or regulatory advice or interpretation.",
+        "No movement of funds, verification of wire changes, or approval of borrower-facing commitments.",
+        "Client personnel retain supervision, permissions, privacy obligations, and every licensed decision."
+      ],
+      "scenarios": [
+        "Teams rebuilding status from inboxes and meetings",
+        "Pipelines with unclear ownership or stale next actions"
+      ],
+      "workflow": [
+        "Map one queue. Identify where work enters, the system of record, the current owner, and the exceptions that consume licensed attention.",
+        "Set the boundary. Document permitted actions, prohibited decisions, approved language, access limits, and the client reviewer.",
+        "Run a controlled sample. Begin with a small file set, inspect every output, and record missing inputs or unclear escalation triggers.",
+        "Review and expand. Use observed quality and exceptions to improve the checklist before adding volume or adjacent work."
+      ],
+      "faqs": [
+        {
+          "question": "Who remains accountable for the work?",
+          "answer": "Your authorized mortgage team retains supervision, review, compliance, privacy, and every licensed or regulated decision."
+        },
+        {
+          "question": "Can the role begin with one workflow?",
+          "answer": "Yes. A narrow queue with a known source, completion standard, reviewer, and escalation path is the safest starting point."
+        },
+        {
+          "question": "How is quality reviewed?",
+          "answer": "The client reviews a defined sample against visible completion and escalation criteria, then updates the workflow when patterns appear."
+        }
+      ]
+    },
+    {
+      "slug": "borrower-follow-up",
+      "title": "Borrower follow up support",
+      "description": "Handle routine approved communication with clear escalation.",
+      "image": "/refresh-20261112/service3.webp",
+      "alt": "Real estate agent in suit shaking hands with client over property deal papers indoors.",
+      "audience": [
+        "Teams with repeatable approved reminders",
+        "Borrower-facing staff losing time to status chasing"
+      ],
+      "problem": "Timely, documented routine follow-up while substantive questions return promptly to authorized mortgage professionals.",
+      "inputs": [
+        "Approved scripts and channels",
+        "Contact and consent records",
+        "Timing rules",
+        "Escalation contacts and prohibited topics"
+      ],
+      "work": [
+        "Prepare follow-up queues",
+        "Send approved routine reminders",
+        "Record borrower responses",
+        "Route substantive questions",
+        "Escalate complaints, hardship, or sensitive messages"
+      ],
+      "outputs": [
+        "Current follow-up queue",
+        "Communication and response log",
+        "Question-routing record",
+        "Urgent exception alerts"
+      ],
+      "controls": [
+        "Consent and channel check",
+        "Approved-language check",
+        "Response capture review",
+        "Immediate escalation of prohibited or sensitive topics"
+      ],
+      "boundaries": [
+        "No credit, underwriting, eligibility, pricing, disclosure, approval, or lending decisions.",
+        "No legal, tax, financial, compliance, or regulatory advice or interpretation.",
+        "No movement of funds, verification of wire changes, or approval of borrower-facing commitments.",
+        "Client personnel retain supervision, permissions, privacy obligations, and every licensed decision."
+      ],
+      "scenarios": [
+        "Teams with repeatable approved reminders",
+        "Borrower-facing staff losing time to status chasing"
+      ],
+      "workflow": [
+        "Map one queue. Identify where work enters, the system of record, the current owner, and the exceptions that consume licensed attention.",
+        "Set the boundary. Document permitted actions, prohibited decisions, approved language, access limits, and the client reviewer.",
+        "Run a controlled sample. Begin with a small file set, inspect every output, and record missing inputs or unclear escalation triggers.",
+        "Review and expand. Use observed quality and exceptions to improve the checklist before adding volume or adjacent work."
+      ],
+      "faqs": [
+        {
+          "question": "Who remains accountable for the work?",
+          "answer": "Your authorized mortgage team retains supervision, review, compliance, privacy, and every licensed or regulated decision."
+        },
+        {
+          "question": "Can the role begin with one workflow?",
+          "answer": "Yes. A narrow queue with a known source, completion standard, reviewer, and escalation path is the safest starting point."
+        },
+        {
+          "question": "How is quality reviewed?",
+          "answer": "The client reviews a defined sample against visible completion and escalation criteria, then updates the workflow when patterns appear."
+        }
+      ]
+    },
+    {
+      "slug": "condition-tracking-support",
+      "title": "Condition tracking support",
+      "description": "Maintain visible records of requested and received conditions.",
+      "image": "/refresh-20261112/service4.webp",
+      "alt": "A couple and realtor discuss details in an unfinished property. Ideal for real estate themes.",
+      "audience": [
+        "Teams with high condition volume and repeated status checks",
+        "Workflows where evidence arrives through several channels"
+      ],
+      "problem": "A current administrative condition register that distinguishes received evidence, missing items, and matters awaiting authorized judgment.",
+      "inputs": [
+        "Authorized condition instructions",
+        "Status definitions",
+        "Approved evidence locations",
+        "Reviewer and escalation rules"
+      ],
+      "work": [
+        "Prepare condition lists from authorized instructions",
+        "Track requested and received status",
+        "Link approved source records",
+        "Maintain factual reviewer notes",
+        "Flag overdue or conflicting items"
+      ],
+      "outputs": [
+        "Current condition register",
+        "Missing and overdue queue",
+        "Evidence-location record",
+        "Exception list for authorized review"
+      ],
+      "controls": [
+        "Instruction-to-register reconciliation",
+        "Evidence-link and date check",
+        "No satisfaction or underwriting judgment by the assistant",
+        "Client sample review"
+      ],
+      "boundaries": [
+        "No credit, underwriting, eligibility, pricing, disclosure, approval, or lending decisions.",
+        "No legal, tax, financial, compliance, or regulatory advice or interpretation.",
+        "No movement of funds, verification of wire changes, or approval of borrower-facing commitments.",
+        "Client personnel retain supervision, permissions, privacy obligations, and every licensed decision."
+      ],
+      "scenarios": [
+        "Teams with high condition volume and repeated status checks",
+        "Workflows where evidence arrives through several channels"
+      ],
+      "workflow": [
+        "Map one queue. Identify where work enters, the system of record, the current owner, and the exceptions that consume licensed attention.",
+        "Set the boundary. Document permitted actions, prohibited decisions, approved language, access limits, and the client reviewer.",
+        "Run a controlled sample. Begin with a small file set, inspect every output, and record missing inputs or unclear escalation triggers.",
+        "Review and expand. Use observed quality and exceptions to improve the checklist before adding volume or adjacent work."
+      ],
+      "faqs": [
+        {
+          "question": "Who remains accountable for the work?",
+          "answer": "Your authorized mortgage team retains supervision, review, compliance, privacy, and every licensed or regulated decision."
+        },
+        {
+          "question": "Can the role begin with one workflow?",
+          "answer": "Yes. A narrow queue with a known source, completion standard, reviewer, and escalation path is the safest starting point."
+        },
+        {
+          "question": "How is quality reviewed?",
+          "answer": "The client reviews a defined sample against visible completion and escalation criteria, then updates the workflow when patterns appear."
+        }
+      ]
+    },
+    {
+      "slug": "closing-preparation",
+      "title": "Closing preparation support",
+      "description": "Organize milestone records and review-ready closing packets.",
+      "image": "/refresh-20261112/service5.webp",
+      "alt": "Pregnant couple reviewing property documents with a real estate agent in a bright modern interior.",
+      "audience": [
+        "Teams coordinating many administrative closing milestones",
+        "Queues where schedule changes are reconstructed manually"
+      ],
+      "problem": "A visible closing-preparation queue with dates, source records, open administrative items, and schedule exceptions ready for review.",
+      "inputs": [
+        "Approved checklist and milestone definitions",
+        "Authorized source systems",
+        "Communication templates",
+        "Schedule and wire-change escalation rules"
+      ],
+      "work": [
+        "Prepare approved closing checklists",
+        "Maintain date and milestone records",
+        "Coordinate approved reminders",
+        "Organize review-ready packet indexes",
+        "Escalate conflicts or unverified changes"
+      ],
+      "outputs": [
+        "Current closing-preparation checklist",
+        "Milestone and reminder record",
+        "Packet index",
+        "Schedule-conflict and unverified-change queue"
+      ],
+      "controls": [
+        "Date-source reconciliation",
+        "Checklist completeness review",
+        "No funds movement or wire-change verification",
+        "Final review by authorized client personnel"
+      ],
+      "boundaries": [
+        "No credit, underwriting, eligibility, pricing, disclosure, approval, or lending decisions.",
+        "No legal, tax, financial, compliance, or regulatory advice or interpretation.",
+        "No movement of funds, verification of wire changes, or approval of borrower-facing commitments.",
+        "Client personnel retain supervision, permissions, privacy obligations, and every licensed decision."
+      ],
+      "scenarios": [
+        "Teams coordinating many administrative closing milestones",
+        "Queues where schedule changes are reconstructed manually"
+      ],
+      "workflow": [
+        "Map one queue. Identify where work enters, the system of record, the current owner, and the exceptions that consume licensed attention.",
+        "Set the boundary. Document permitted actions, prohibited decisions, approved language, access limits, and the client reviewer.",
+        "Run a controlled sample. Begin with a small file set, inspect every output, and record missing inputs or unclear escalation triggers.",
+        "Review and expand. Use observed quality and exceptions to improve the checklist before adding volume or adjacent work."
+      ],
+      "faqs": [
+        {
+          "question": "Who remains accountable for the work?",
+          "answer": "Your authorized mortgage team retains supervision, review, compliance, privacy, and every licensed or regulated decision."
+        },
+        {
+          "question": "Can the role begin with one workflow?",
+          "answer": "Yes. A narrow queue with a known source, completion standard, reviewer, and escalation path is the safest starting point."
+        },
+        {
+          "question": "How is quality reviewed?",
+          "answer": "The client reviews a defined sample against visible completion and escalation criteria, then updates the workflow when patterns appear."
+        }
+      ]
+    },
+    {
+      "slug": "post-closing-document-support",
+      "title": "Post-closing document support",
+      "description": "Organize trailing documents, receipt status, and post-closing file handoffs.",
+      "image": "/refresh-20261112/service6.webp",
+      "alt": "Professionals organizing documents and coordinating work",
+      "audience": [
+        "Mortgage operations teams with a documented process and a named reviewer.",
+        "Managers who need a visible queue and dependable follow-up."
+      ],
+      "problem": "Organize trailing documents, receipt status, and post-closing file handoffs. Scattered messages and unclear ownership make it harder to see what is complete. This role brings the routine administration into one reviewable process.",
+      "inputs": [
+        "Approved post-closing checklist and filing rules",
+        "Document custodians and authorized request templates",
+        "Representative examples of accepted work and handling rules"
+      ],
+      "work": [
+        "Record outstanding document requirements from your approved checklist",
+        "Track requests, receipts, and document versions",
+        "Index received records in the approved repository",
+        "Prepare aging summaries and route unresolved items"
+      ],
+      "outputs": [
+        "Trailing-document register with due dates and owners",
+        "Indexed receipt record and exception handoff"
+      ],
+      "controls": [
+        "Check every update against the authoritative source",
+        "Keep dates, status changes, and next owners visible",
+        "Review a sample with the accountable manager",
+        "Escalate conflicting or sensitive information promptly"
+      ],
+      "boundaries": [
+        "Lending, credit, compliance interpretation, disclosures, and borrower commitments stay with authorized mortgage professionals."
+      ],
+      "scenarios": [
+        "Start with a small queue when follow-up is consuming manager time.",
+        "Use an approved checklist to improve visibility across several teams."
+      ],
+      "workflow": [
+        "Agree the source, permissions, reviewer, and finish line.",
+        "Run a limited pilot and inspect the resulting records.",
+        "Resolve unclear instructions before increasing volume."
+      ],
+      "faqs": [
+        {
+          "question": "What should we prepare first?",
+          "answer": "Bring the approved checklist, a representative example, system access rules, and a named reviewer. Please do not submit personal records through the contact form."
+        },
+        {
+          "question": "Who approves exceptions?",
+          "answer": "Your authorized manager retains approval and sensitive decisions. The assistant records the issue and routes it to that person."
+        }
+      ]
+    },
+    {
+      "slug": "mortgage-inbox-coordination",
+      "title": "Mortgage inbox coordination",
+      "description": "Keep routine mortgage messages connected to the right file, owner, and next step.",
+      "image": "/refresh-20261112/service7.webp",
+      "alt": "Professionals organizing documents and coordinating work",
+      "audience": [
+        "Mortgage operations teams with a documented process and a named reviewer.",
+        "Managers who need a visible queue and dependable follow-up."
+      ],
+      "problem": "Keep routine mortgage messages connected to the right file, owner, and next step. Scattered messages and unclear ownership make it harder to see what is complete. This role brings the routine administration into one reviewable process.",
+      "inputs": [
+        "Approved inbox access and message categories",
+        "Response templates and escalation contacts",
+        "Representative examples of accepted work and handling rules"
+      ],
+      "work": [
+        "Classify incoming messages using your approved categories",
+        "Connect messages to existing file records",
+        "Send approved receipt and status acknowledgments",
+        "Route lending questions and urgent exceptions to licensed staff"
+      ],
+      "outputs": [
+        "Organized message queue with next owners",
+        "Dated follow-up and escalation record"
+      ],
+      "controls": [
+        "Check every update against the authoritative source",
+        "Keep dates, status changes, and next owners visible",
+        "Review a sample with the accountable manager",
+        "Escalate conflicting or sensitive information promptly"
+      ],
+      "boundaries": [
+        "Lending, credit, compliance interpretation, disclosures, and borrower commitments stay with authorized mortgage professionals."
+      ],
+      "scenarios": [
+        "Start with a small queue when follow-up is consuming manager time.",
+        "Use an approved checklist to improve visibility across several teams."
+      ],
+      "workflow": [
+        "Agree the source, permissions, reviewer, and finish line.",
+        "Run a limited pilot and inspect the resulting records.",
+        "Resolve unclear instructions before increasing volume."
+      ],
+      "faqs": [
+        {
+          "question": "What should we prepare first?",
+          "answer": "Bring the approved checklist, a representative example, system access rules, and a named reviewer. Please do not submit personal records through the contact form."
+        },
+        {
+          "question": "Who approves exceptions?",
+          "answer": "Your authorized manager retains approval and sensitive decisions. The assistant records the issue and routes it to that person."
+        }
+      ]
+    }
+  ]
+}

@@ -154,7 +154,8 @@
 @media (max-width: 720px) {
   .toc { display: none; }
   .mobileToc {
-    display: contents;
+    display: block;
+    margin: 0 0 1.4rem;
   }
   .mobileToc summary {
     display: flex;

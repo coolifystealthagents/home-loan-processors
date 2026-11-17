@@ -193,6 +193,7 @@
     font-size: 1.1rem;
     line-height: 1;
   }
+  .mobileToc:not([open]) > nav { display: none; }
   .mobileToc[open] summary::after { content: '-'; }
   .mobileToc[open] summary { margin-bottom: 0; border-radius: 12px 12px 0 0; }
   .mobileToc nav {

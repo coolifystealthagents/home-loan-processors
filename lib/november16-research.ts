@@ -596,12 +596,12 @@ export const november16ResearchPosts: ResearchPost[] = [
     ]
   },
   {
-    "slug": "a-framework-for-auditing-borrower-escalation-summaries",
-    "title": "A framework for auditing borrower escalation summaries",
+    "slug": "auditing-borrower-escalation-summaries-against-the-stated-response-path",
+    "title": "Auditing borrower escalation summaries against the stated response path",
     "summary": "An audit framework for checking whether a borrower escalation summary is factual, complete, and clear about the next step and its owner.",
     "cluster": "Borrower communication",
     "publishedAt": "2026-11-16",
-    "thumbnail": "/thumbnails/november-16/a-framework-for-auditing-borrower-escalation-summaries.webp",
+    "thumbnail": "/thumbnails/november-16/auditing-borrower-escalation-summaries-against-the-stated-response-path.webp",
     "finding": "A borrower escalation summary can be audited against four tests: confirmed facts, a named blocking item, one next step, and a date the team can keep.",
     "sections": [
       {

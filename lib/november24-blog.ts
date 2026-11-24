@@ -3,7 +3,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "check-a-borrower-s-rental-income-against-the-lease-and-tax-return",
     "title": "Check a borrower's rental income against the lease and tax return",
-    "description": "A practical rental income check control for mortgage processors, with a named owner, dated evidence, and a reviewable close in the loan file.",
+    "description": "A practical rental income check control for the mortgage desk, naming the loan-file evidence, the deciding reviewer, and the closing record in the loan file.",
     "category": "Income verification",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -86,7 +86,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "review-a-self-employed-borrower-s-k-1-distribution",
     "title": "Review a self-employed borrower's K-1 distribution",
-    "description": "A practical K-1 distribution review control for mortgage processors, with a named owner, dated evidence, and a reviewable close in the loan file.",
+    "description": "A practical K-1 distribution review control for the mortgage desk, naming the loan-file evidence, the deciding reviewer, and the closing record in the loan file.",
     "category": "Income verification",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -169,7 +169,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "track-an-appraisal-effective-date-against-the-closing-date",
     "title": "Track an appraisal effective date against the closing date",
-    "description": "A practical appraisal effective date control for mortgage processors, with a named owner, dated evidence, and a reviewable close in the appraisal file.",
+    "description": "A practical appraisal effective date control for the mortgage desk, naming the loan-file evidence, the deciding reviewer, and the closing record in the appraisal file.",
     "category": "Appraisal review",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -252,7 +252,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "check-a-va-funding-fee-against-the-certificate-of-eligibility",
     "title": "Check a VA funding fee against the certificate of eligibility",
-    "description": "A practical VA funding fee check control for mortgage processors, with a named owner, dated evidence, and a reviewable close in the loan file.",
+    "description": "A practical VA funding fee check control for the mortgage desk, naming the loan-file evidence, the deciding reviewer, and the closing record in the loan file.",
     "category": "Program compliance",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -335,7 +335,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "review-a-usda-guarantee-fee-against-the-program-limits",
     "title": "Review a USDA guarantee fee against the program limits",
-    "description": "A practical USDA guarantee fee review control for mortgage processors, with a named owner, dated evidence, and a reviewable close in the loan file.",
+    "description": "A practical USDA guarantee fee review control for the mortgage desk, naming the loan-file evidence, the deciding reviewer, and the closing record in the loan file.",
     "category": "Program compliance",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -418,7 +418,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "set-a-hazard-insurance-binder-check-before-closing",
     "title": "Set a hazard insurance binder check before closing",
-    "description": "A practical hazard binder check control for mortgage processors, with a named owner, dated evidence, and a reviewable close in the closing file.",
+    "description": "A practical hazard binder check control for the mortgage desk, naming the loan-file evidence, the deciding reviewer, and the closing record in the closing file.",
     "category": "Insurance",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -501,7 +501,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "check-a-borrower-s-pension-income-against-the-award-letter",
     "title": "Check a borrower's pension income against the award letter",
-    "description": "A practical pension income check control for mortgage processors, with a named owner, dated evidence, and a reviewable close in the loan file.",
+    "description": "A practical pension income check control for the mortgage desk, naming the loan-file evidence, the deciding reviewer, and the closing record in the loan file.",
     "category": "Income verification",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -584,7 +584,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "review-a-loan-file-s-seller-credit-against-the-closing-disclosure",
     "title": "Review a loan file's seller credit against the closing disclosure",
-    "description": "A practical seller credit review control for mortgage processors, with a named owner, dated evidence, and a reviewable close in the closing file.",
+    "description": "A practical seller credit review control for the mortgage desk, naming the loan-file evidence, the deciding reviewer, and the closing record in the closing file.",
     "category": "Closing compliance",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",

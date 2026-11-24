@@ -7,7 +7,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Mortgage research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/does-rental-income-match-the-lease-and-tax-records.webp",
-    "finding": "Rental income reconciliation is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Rental income reconciliation becomes reviewable only after the processor freezes the file population, names the evidence standard, and lists every excluded loan before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
@@ -96,7 +96,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Mortgage research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/are-self-employed-k-1-distributions-documented-for-qualification.webp",
-    "finding": "K-1 distribution documentation is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "K-1 distribution documentation becomes reviewable only after the processor freezes the file population, names the evidence standard, and lists every excluded loan before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
@@ -185,7 +185,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Mortgage research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/do-appraisals-remain-effective-through-closing.webp",
-    "finding": "Appraisal effective period is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Appraisal effective period becomes reviewable only after the processor freezes the file population, names the evidence standard, and lists every excluded loan before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
@@ -274,7 +274,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Mortgage research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/do-va-funding-fees-match-the-certificate-of-eligibility.webp",
-    "finding": "Va funding fee accuracy is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Va funding fee accuracy becomes reviewable only after the processor freezes the file population, names the evidence standard, and lists every excluded loan before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
@@ -363,7 +363,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Mortgage research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/do-usda-guarantee-fees-match-program-limits.webp",
-    "finding": "Usda fee compliance is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Usda fee compliance becomes reviewable only after the processor freezes the file population, names the evidence standard, and lists every excluded loan before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
@@ -452,7 +452,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Mortgage research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/are-hazard-binders-in-place-before-closing.webp",
-    "finding": "Hazard binder coverage is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Hazard binder coverage becomes reviewable only after the processor freezes the file population, names the evidence standard, and lists every excluded loan before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
@@ -541,7 +541,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Mortgage research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/does-pension-income-match-the-award-letter.webp",
-    "finding": "Pension income accuracy is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Pension income accuracy becomes reviewable only after the processor freezes the file population, names the evidence standard, and lists every excluded loan before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
